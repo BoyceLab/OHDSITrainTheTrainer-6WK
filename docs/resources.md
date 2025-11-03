@@ -23,23 +23,58 @@
 
 > Educational materials, tutorials, and recorded sessions to deepen OMOP/OHDSI knowledge.
 
-- **[OHDSI YouTube Tutorials Playlist](https://youtube.com/playlist?list=PLpzbqK7kvfeXRQktX0PV-cRpb3EFA2e7Z)** – foundational training videos  
-- **[EHDEN Academy — All Courses](https://academy.ehden.eu/course/index.php?categoryid=all)** – free self-paced learning modules on OMOP, ETL, and data quality  
-- **[Introduction to OMOP: Your Frequently Asked Questions Answered](https://ilearn.tuftsctsi.org/product?catalog=D1RS_2025_18)** – Tufts CTSI course by *Danielle Boyce (ALS TDI)* & *Pavel Goriacko (Montefiore)*  
-- **[OHDSI YouTube Channel](https://www.youtube.com/@OHDSI)** – weekly community calls, symposium recordings, and lightning talks  
+### [Introduction to OMOP: Your Frequently Asked Questions Answered](https://ilearn.tuftsctsi.org/product?catalog=D1RS_2025_18)
+> **Taught by:** *Danielle Boyce (ALS TDI)* and *Pavel Goriacko (Montefiore)*  
+> Hosted on the **Tufts CTSI iLEARN** platform.
+
+**Overview**
+- A practical, accessible introduction to the **OMOP Common Data Model**, vocabulary concepts, and the OHDSI ecosystem.  
+- Designed to address common questions from analysts, clinicians, and data engineers new to OMOP.  
+- Ideal for onboarding new OHDSI collaborators and supplementing the **Week 1 curriculum**.
+
+**Enroll:** [Click here to join the course →](https://ilearn.tuftsctsi.org/product?catalog=D1RS_2025_18)
+
+---
+### [EHDEN Academy — All Courses](https://academy.ehden.eu/course/index.php?categoryid=all)
+> **EHDEN Academy** offers free, self-paced training from the European Health Data & Evidence Network on topics essential to the OMOP and OHDSI communities.
+
+**Highlights**
+- 🧱 *OMOP Common Data Model & Standardized Vocabularies*  
+- ⚙️ *ETL Design, Data Quality, and Governance*  
+- 📊 *Observational Health Data Science, RWE, and OHDSI Tooling*  
+
+**Use in this program**
+- Great supplemental material for **Weeks 1–2** (CDM & Vocabularies)  
+- Deep dives for **ETL and Data Quality** sessions later in the curriculum  
+
+**Access:** [academy.ehden.eu → All Courses](https://academy.ehden.eu/course/index.php?categoryid=all)
 
 ---
 
-## 💬 Community & Collaboration
+### [ELIXIR-EXCELERATE Train-the-Trainer Repository (2016–17)](https://github.com/TrainTheTrainer/ELIXIR-EXCELERATE-TtT)
 
-> Engage with the global OHDSI network — join calls, workgroups, and discussion forums.
+> A foundational **Train-the-Trainer** resource developed as part of the **ELIXIR / EXCELERATE** project.  
+> This GitHub repository includes slides, materials, and guidance on training frameworks and community building across data networks.
 
-- **[OHDSI Forums](https://forums.ohdsi.org/)** – community Q&A and announcements  
-- **[OHDSI Community Calls](https://ohdsi.org/community-calls/)** – weekly live sessions and recordings  
-- **[OHDSI Workgroups](https://www.ohdsi.org/workgroups/)** – thematic and regional working groups  
-- **[Workgroup Sign-Up (Microsoft Teams)](https://forms.office.com/Pages/ResponsePage.aspx?id=lAAPoyCRq0q6TOVQkCOy1ZyG6Ud_r2tKuS0HcGnqiQZUQ05MOU9BSzEwOThZVjNQVVFGTDNZRENONiQlQCN0PWcu)** – request access to OHDSI’s Teams collaboration space  
-- **[OHDSI LinkedIn](https://www.linkedin.com/company/ohdsi)** – connect professionally with the OHDSI network  
-- **[OHDSI Newsletter](https://ohdsi.org/subscribe-to-our-newsletter/)** – subscribe for updates and events  
+**Highlights**
+- 📘 Training program structure and facilitator guidance  
+- 🧩 Teaching methods and train-the-trainer resources from the original initiative  
+- 🌍 Served as an early model for open-network skill-building programs like the OHDSI Train-the-Trainer series
+
+**Access:** [github.com/TrainTheTrainer/ELIXIR-EXCELERATE-TtT →](https://github.com/TrainTheTrainer/ELIXIR-EXCELERATE-TtT)
+
+
+---
+
+### [OHDSI YouTube Channel](https://www.youtube.com/@OHDSI)
+> The official **OHDSI YouTube Channel** hosts tutorials, community calls, symposium sessions, and lightning talks.
+
+**Highlights**
+- 🎥 Weekly community calls and global symposium presentations  
+- 📚 Deep dives into the OMOP CDM, Atlas, HADES, and data quality tools  
+- 🌍 Great for visual learners and staying up to date with OHDSI developments  
+
+**Access:** [youtube.com/@OHDSI →](https://www.youtube.com/@OHDSI)
 
 ---
 
