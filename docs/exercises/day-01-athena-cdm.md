@@ -1,8 +1,4 @@
-# 🧭 Day 1 · Athena Vocabulary Exploration & Quiz
-
-> **Purpose:** Learn to explore OMOP standardized vocabularies in [Athena](https://athena.ohdsi.org/)  
-> and test your understanding of OMOP CDM concepts, vocabularies, and relationships.
-
+# 🧭 Day 1 · Exercises, Quiz, and Discussion Topics
 ---
 
 ## 🧩 Athena Vocabulary Exploration Exercise
