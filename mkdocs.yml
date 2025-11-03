@@ -6,8 +6,8 @@ repo_name: BoyceLab/OHDSITrainTheTrainer-6WK
 
 theme:
   name: material
-  logo: assets/img/IMG_7932.jpeg
-  favicon: assets/img/IMG_7932.jpeg
+  logo: assets/img/IMG_7932.png
+  favicon: assets/img/IMG_7932.png
   font:
     text: EB Garamond
   palette:
