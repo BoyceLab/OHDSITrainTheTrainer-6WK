@@ -217,7 +217,6 @@ You can turn this into an in-class poll (Kahoot, PollEv) or reuse it for post-tr
 Answers are embedded but collapsed by default to encourage active recall.
 
 ---
-
 ??? info "💬 Trainer Reference – Suggested Answers"
 
     ## 🔍 Section 1 – Getting Started with Athena
@@ -276,19 +275,61 @@ Answers are embedded but collapsed by default to encourage active recall.
     | How does vocabulary hierarchy influence inclusion/exclusion? | The ancestor/descendant range affects cohort breadth — too high = over-inclusive, too low = overly narrow. |
     | Multi-domain example (*HbA1c*) — Why does domain assignment matter? | “HbA1c as Measurement” indicates a lab test; as Observation, it might represent a note. Correct domain ensures proper table joins and analysis. |
 
-    ---
+---
 
-    ## 💡 Key Takeaways
+??? tip "💡 Trainer Reference — Checking Vocabulary Version"
+
+    In OMOP, each vocabulary (SNOMED, RxNorm, LOINC, ICD, etc.) includes a **version** and **release date**
+    stored in the `vocabulary` table.  
+    This exercise helps confirm whether your local vocabularies are up-to-date with the latest
+    versions available from [Athena](https://athena.ohdsi.org).
+
+    **To find your installed vocabulary versions:**
+
+    ```sql
+    SELECT vocabulary_id,
+           vocabulary_name,
+           vocabulary_reference,
+           vocabulary_version,
+           vocabulary_concept_id
+    FROM vocabulary
+    ORDER BY vocabulary_id;
+    ```
+
+    **Example output**
+
+    | vocabulary_id | vocabulary_name             | vocabulary_version | vocabulary_reference |
+    |----------------|-----------------------------|--------------------|----------------------|
+    | SNOMED         | SNOMED Clinical Terms       | 2025-03-01         | snomed.org          |
+    | RxNorm         | RxNorm Vocabulary           | 2025-01-01         | rxnorm.nlm.nih.gov  |
+    | LOINC          | Logical Observation Identifiers Names and Codes | 2.77 | loinc.org |
+    | ICD10CM        | ICD-10 Clinical Modification | 2025               | cdc.gov/nchs/icd.htm |
+
+    **How to interpret results**
+
+    * `vocabulary_version` shows the release date or version of each vocabulary.  
+    * Versions differ across vocabularies — they don’t all update together.  
+    * Compare your dates with current ones on [Athena](https://athena.ohdsi.org/downloads)
+      to see if you need to refresh your vocabulary package.
+
+    **Sample reflection / answer:**
+
+    > “Our installed OMOP vocabularies are dated **March 2025**.  
+    > The latest Athena release lists **May 2025** versions for SNOMED and RxNorm,  
+    > so we’ll plan to update to maintain alignment with current standards.”
+
+---
+
+??? info "💡 Key Takeaways"
 
     - **SNOMED CT** is the standard for clinical conditions in OMOP.  
     - **Mapping relationships** (“Maps to,” “Maps to value”) form the backbone of standardization.  
     - **Hierarchy** (“Is a,” “Has ancestor”) controls the precision of concept sets.  
     - **Version tracking** is essential for reproducibility across time and data partners.  
 
-    ---
-
     🧩 *Instructor Tip:* Review these answers **after** learners share findings to reinforce reasoning.  
     Keep this section collapsed in MkDocs — it’s hidden by default and easy to expand during class.
 
-   ---
+---
+
 [⬅ Back to the module: **Day 1 · OMOP CDM**](../modules/day-01-omop-cdm.md)
