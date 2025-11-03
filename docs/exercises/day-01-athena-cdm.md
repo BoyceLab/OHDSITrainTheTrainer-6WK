@@ -95,14 +95,6 @@ Pick another condition (e.g., *Hypertension*, *Asthma*, *Heart Failure*).
 
 ---
 
-## 📋 Deliverables
-
-- Completed answers to vocabulary questions.  
-- 2–3 screenshots from Athena (search, details, relationships).  
-- Reflection notes summarizing insights.
-
----
-
 ## 🧾 Trainer Overview (Sample Discussion Notes)
 
 **Example Discussion**
@@ -116,14 +108,14 @@ Pick another condition (e.g., *Hypertension*, *Asthma*, *Heart Failure*).
 
 ---
 
-# 🧮 Day 1 · OMOP Vocabulary & CDM Quiz
+## 🧮 Day 1 · OMOP Vocabulary & CDM Quiz
 
 > **Goal:** Test your understanding of the OMOP Common Data Model and standardized vocabularies.  
 > Click **“Show answer”** under each question to reveal the explanation.
 
 ---
 
-## 1️⃣ Concepts & Standardization
+### 1️⃣ Concepts & Standardization
 
 ??? question "Q1. What does it mean for a concept to be *standard* in OMOP?"
     **Answer:**  
@@ -147,7 +139,7 @@ Pick another condition (e.g., *Hypertension*, *Asthma*, *Heart Failure*).
 
 ---
 
-## 2️⃣ Core CDM Structure
+### 2️⃣ Core CDM Structure
 
 ??? question "Q4. Which of the following tables contains patient-level clinical events?"
     **Answer:**  
@@ -162,7 +154,7 @@ Pick another condition (e.g., *Hypertension*, *Asthma*, *Heart Failure*).
 
 ---
 
-## 3️⃣ Vocabulary Navigation in Athena
+### 3️⃣ Vocabulary Navigation in Athena
 
 ??? question "Q6. What does “Maps to” indicate in Athena?"
     **Answer:**  
@@ -177,7 +169,7 @@ Pick another condition (e.g., *Hypertension*, *Asthma*, *Heart Failure*).
 
 ---
 
-## 4️⃣ Relationships & Hierarchies
+### 4️⃣ Relationships & Hierarchies
 
 ??? question "Q8. Which pair of relationship IDs defines the hierarchy between general and specific concepts?"
     **Answer:**  
@@ -193,7 +185,7 @@ Pick another condition (e.g., *Hypertension*, *Asthma*, *Heart Failure*).
 
 ---
 
-## 5️⃣ Applied Reasoning
+### 5️⃣ Applied Reasoning
 
 ??? question "Q10. A data engineer loads a new EHR table but forgets to translate ICD-9 codes to SNOMED concepts. What is the most likely downstream issue?"
     **Answer:**  
