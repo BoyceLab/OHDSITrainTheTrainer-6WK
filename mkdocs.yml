@@ -6,6 +6,8 @@ repo_name: BoyceLab/OHDSITrainTheTrainer-6WK
 
 theme:
   name: material
+  logo: assets/img/IMG_7932.jpeg
+  favicon: assets/img/IMG_7932.jpeg
   font:
     text: EB Garamond
   palette:
@@ -16,7 +18,6 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
-
 nav:
   - Home: index.md
   - Syllabus: syllabus.md
