@@ -1,5 +1,6 @@
 site_name: OHDSI Train The Trainer
-site_url: https://BoyceLab.github.io/OHDSITrainTheTrainer-6WK
+site_url: https://boycelab.github.io/OHDSITrainTheTrainer-6WK
+
 repo_url: https://github.com/BoyceLab/OHDSITrainTheTrainer-6WK
 repo_name: BoyceLab/OHDSITrainTheTrainer-6WK
 
@@ -25,19 +26,12 @@ nav:
       - Day 1 · OMOP Common Data Model: modules/day-01-omop-cdm.md
       - Day 2 · Vocabulary & Data Quality: modules/day-02-vocab-dqd.md
   - Exercises:
-      - Exercises:
       - Day 0 · Environment Checks: exercises/day-00-environment.md
       - Day 1 · Athena & CDM: exercises/day-01-athena-cdm.md
       - Day 1 · Code Snippets: exercises/code_snippets/day-01-snippets.md
       - Day 2 · Vocab & DQD: exercises/day-02-vocab-dqd.md
-      - Day 3 · Cohorts in ATLAS: exercises/day-03-cohorts.md
-      - Day 4 · Data Extraction: exercises/day-04-extraction.md
-      - Day 5 (Optional) · Treatment Pathways: exercises/day-05-pathways-optional.md
-      - Day 6 (Optional) · HADES: exercises/day-06-hades-optional.md
-   - Resources:
+  - Resources:
       - Environment Checklist Template: common_artifacts/environment-checklist-template.md
-      - Download Checklist (CSV): common_artifacts/environment-checklist-template.csv
-      - OMOP Vocabulary & SQL Cheat Sheet: common_artifacts/omop-vocab-sql-cheat-sheet.md
       - OMOP SQL Examples: common_artifacts/omop-sql-examples.md
       - SQL Validation Mini Lab: common_artifacts/sql-validation-mini-lab.md
       - ATLAS User Process Guide: common_artifacts/atlas-user-process-guide.md
@@ -77,3 +71,4 @@ extra:
 
 extra_css:
   - assets/css/custom.css
+
