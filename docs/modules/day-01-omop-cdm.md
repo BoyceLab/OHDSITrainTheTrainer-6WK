@@ -35,8 +35,8 @@ By the end of this session, you should be able to:
 
 ## 🧠 Slides & Materials
 - 📑 **Lecture slides:** [Download Day 1 Slides (PPTX)](../training/day1-omop-cdm/Day1.pptx)
-- 🧩 **SQL Examples:** [Day 1 · Code Snippets](../exercises/code_snippets/day-01-snippets.md)  
-- 📘 **Cheat Sheet:** [OMOP Vocabulary and SQL Cheat Sheet](../training/day1-omop-cdm/OMOP_Vocabulary_and_SQL_Cheat_Sheet.md)
+- 🧩 **SQL Examples:** [Day 1 · Code Snippets](../exercises/code_snippets/day-01-snippets.md)
+- 📘 **Cheat Sheet:** [OMOP Vocabulary and SQL Cheat Sheet](../common_artifacts/omop-vocab-sql-cheat-sheet.md)
 
 ---
 
