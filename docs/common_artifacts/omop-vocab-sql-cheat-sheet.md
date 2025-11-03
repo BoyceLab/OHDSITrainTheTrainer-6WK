@@ -1,5 +1,5 @@
 # 🧾 OMOP Vocabulary & SQL Cheat Sheet  
-### OHDSI Training Reference
+### OHDSI Training Reference (Updated for OMOP CDM v6 – 2025)
 
 ---
 
@@ -14,6 +14,7 @@
 | **Vocabulary ID (`vocabulary_id`)** | Identifies the vocabulary the concept belongs to. | e.g., `ICD9CM`, `SNOMED`, `RxNorm`, `LOINC` |
 | **Domain ID (`domain_id`)** | The high-level category of data the concept belongs to. | e.g., `Condition`, `Drug`, `Measurement`, `Observation` |
 | **Concept Class (`concept_class_id`)** | Subcategory within a vocabulary for additional granularity. | e.g., “Clinical Finding” within SNOMED |
+| **Invalid Reason (`invalid_reason`)** | Indicates concept status: `'D'` (deprecated), `'U'` (updated), or `NULL` (active). | Useful for filtering out retired concepts. |
 
 ---
 
@@ -43,8 +44,9 @@
 | **Mapped from** | Reverse of “Maps to” (Standard → Non-standard). | Reference only. |
 | **Is a** | Indicates hierarchy — the concept is a subtype of another. | “Essential hypertension” *is a* “Hypertension”. |
 | **Subsumes** | The broader concept encompasses another. | “Hypertension” *subsumes* “Essential hypertension”. |
-| **Concept replaced by** | Indicates an outdated concept replaced by a newer one. | Useful for version tracking in vocabularies. |
+| **Concept replaced by / Concept replaces** | Tracks deprecated concepts and their replacements. | Useful for vocabulary version control. |
 | **Has synonym** | Indicates equivalent wording or alternate naming. | “HTN” *has synonym* “Hypertension”. |
+| **Is a - Source** | Indicates hierarchy in *source* vocabularies. | Used mainly in ICD and local vocab structures. |
 
 ---
 
@@ -62,11 +64,14 @@
 
 | Table | Purpose |
 |--------|----------|
-| **concept** | Contains all concept records (IDs, codes, names, vocabularies, domains). |
+| **concept** | Contains all concept records (IDs, codes, names, vocabularies, domains, validity). |
 | **concept_relationship** | Defines pairwise relationships between concepts (e.g., “Maps to”, “Is a”). |
 | **concept_ancestor** | Pre-computes hierarchical ancestor–descendant pairs for faster querying. |
 | **concept_synonym** | Lists alternative names for concepts. |
-| **vocabulary** | Lists all vocabularies included in OMOP (e.g., SNOMED, LOINC, RxNorm). |
+| **vocabulary** | Lists all vocabularies and their version metadata. |
+| **concept_class** | Lists all available concept classes and their descriptions. |
+| **domain** | Lists all valid domains (Condition, Drug, etc.). |
+| **relationship** | Lists all possible relationship types and whether they are hierarchical or mapping (`is_hierarchical`, `defines_ancestry`). |
 
 ---
 
@@ -75,10 +80,13 @@
 | Goal | Example SQL | Notes |
 |------|--------------|-------|
 | Find concept by name | ```sql SELECT * FROM concept WHERE concept_name = 'Hypertension'; ``` | Returns all vocabularies with that name. |
-| Find standard concept by code | ```sql SELECT * FROM concept WHERE concept_code = '370143000'; ``` | Returns SNOMED entry if standard. |
+| Find standard concept by code | ```sql SELECT * FROM concept WHERE concept_code = '370143000' AND standard_concept = 'S'; ``` | Returns SNOMED entry if standard. |
 | Map non-standard to standard | ```sql SELECT * FROM concept_relationship WHERE concept_id_1 = <nonstandard_id> AND relationship_id = 'Maps to'; ``` | Use the resulting `concept_id_2` as your standard ID. |
 | Explore concept relationships | ```sql SELECT cr.relationship_id, c.concept_name FROM concept_relationship cr JOIN concept c ON cr.concept_id_2 = c.concept_id WHERE cr.concept_id_1 = <concept_id>; ``` | View all related concepts. |
 | Retrieve descendants | ```sql SELECT descendant_concept_id FROM concept_ancestor WHERE ancestor_concept_id = <concept_id>; ``` | Use for broad cohort definitions. |
+| Retrieve standard descendants | ```sql SELECT c.concept_id, c.concept_name FROM concept_ancestor ca JOIN concept c ON ca.descendant_concept_id = c.concept_id WHERE ca.ancestor_concept_id = <concept_id> AND c.standard_concept = 'S'; ``` | Filters to standard terms only. |
+| Find active concepts only | ```sql SELECT * FROM concept WHERE invalid_reason IS NULL; ``` | Excludes deprecated concepts. |
+| List all vocabularies and versions | ```sql SELECT vocabulary_id, vocabulary_name, vocabulary_version FROM vocabulary; ``` | Useful for documenting versioning. |
 
 ---
 
@@ -88,8 +96,10 @@
 - 🔁 Map **non-standard** codes to their standard equivalents using “Maps to”.  
 - 🧱 Use **concept sets** to define reusable groups of concepts.  
 - 🔍 Use the **Athena browser** ([https://athena.ohdsi.org/](https://athena.ohdsi.org/)) to explore and download vocabularies.  
-- ⚙️ When building SQL queries, filter with `standard_concept = 'S'` to avoid duplicates or source-only codes.  
-- 📅 Document vocabulary versions — they evolve over time.  
+- ⚙️ Filter with `standard_concept = 'S'` to avoid duplicates or source-only codes.  
+- 📅 Always **document vocabulary versions** (`vocabulary_version` in the `vocabulary` table).  
+- 🚫 Exclude deprecated concepts using `invalid_reason IS NULL`.  
+- 🧩 Verify mappings with the `relationship` table’s metadata (hierarchical or not).  
 
 ---
 
@@ -97,23 +107,24 @@
 
 | Tip | Remember |
 |-----|-----------|
-| 🔢 `concept_id` | Internal OMOP ID (never changes across vocab versions). |
+| 🔢 `concept_id` | Internal OMOP ID (persistent across vocab versions). |
 | 🧾 `concept_code` | Source code (e.g., ICD, SNOMED, RxNorm). |
 | 🧱 Standard Concept | The “canonical” version you analyze with. |
 | 🔗 Maps to | The bridge from non-standard → standard. |
 | 🌳 Ancestor / Descendant | Think “tree”: Ancestor is broader, Descendant is narrower. |
 | 🧭 Domain ID | Tells you what kind of concept (Condition, Drug, etc.). |
 | 🧠 `concept_relationship` | How concepts are connected. |
+| ⚙️ `invalid_reason` | Helps you spot deprecated or updated codes. |
 
 ---
 
 ## 📚 Additional Resources
 
 - **OHDSI Book of OHDSI:** [https://ohdsi.github.io/TheBookOfOhdsi/](https://ohdsi.github.io/TheBookOfOhdsi/)  
-- **OMOP Vocabulary Reference:** [https://ohdsi.github.io/CommonDataModel/](https://ohdsi.github.io/CommonDataModel/)  
+- **OMOP CDM Reference (v6+):** [https://ohdsi.github.io/CommonDataModel/](https://ohdsi.github.io/CommonDataModel/)  
 - **Athena Vocabulary Browser:** [https://athena.ohdsi.org/](https://athena.ohdsi.org/)  
-- **OHDSI Forum Discussions:** [https://forums.ohdsi.org/](https://forums.ohdsi.org/)
+- **OHDSI Forum Discussions:** [https://forums.ohdsi.org/](https://forums.ohdsi.org/)  
 
 ---
 
-🧩 *This cheat sheet is designed for OHDSI OMOP CDM training programs and complements hands-on SQL practice sessions.*
+🧩 *Updated for OMOP CDM v6 (2025). Includes new relationship types, invalid_reason handling, and metadata tables for comprehensive training coverage.*
