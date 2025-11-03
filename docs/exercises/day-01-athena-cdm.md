@@ -105,5 +105,3 @@ Pick another condition (e.g., *Hypertension*, *Asthma*, *Heart Failure*).
 - *Non-standard concept:* `E11.9 – Type 2 diabetes mellitus without complications` (ICD10CM) → maps to 201826.  
 - OMOP standardizes to SNOMED so EHR diagnoses share a common meaning.  
 - ICD codes map to SNOMED via “Maps to” relationships in Athena.
-
-![Trainer example placeholder](../assets/day1/trainer-example.png)
