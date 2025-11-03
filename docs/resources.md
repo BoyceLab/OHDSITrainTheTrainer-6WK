@@ -23,6 +23,10 @@
 
 > Educational materials, tutorials, and recorded sessions to deepen OMOP/OHDSI knowledge.
 
+### [OMOP Vocabulary & SQL Cheat Sheet](training/day1-omop-cdm/OMOP_Vocabulary_and_SQL_Cheat_Sheet.md)
+> A concise, one-page reference summarizing OMOP vocabulary tables, key SQL joins, and common concept-relationship logic.  
+> Ideal for Day 1 participants and anyone reviewing OMOP data structures.
+
 ### [Introduction to OMOP: Your Frequently Asked Questions Answered](https://ilearn.tuftsctsi.org/product?catalog=D1RS_2025_18)
 > **Taught by:** *Danielle Boyce (ALS TDI)* and *Pavel Goriacko (Montefiore)*  
 > Hosted on the **Tufts CTSI iLEARN** platform.
