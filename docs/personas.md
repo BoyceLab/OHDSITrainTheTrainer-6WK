@@ -122,7 +122,6 @@ Adult learning principles · GitHub workflow for shared materials · Discussion 
 - [ELIXIR-Exelerate Train the Trainer GitHub Repository: Training Guidelines](https://rdmkit.elixir-europe.org/training.htm](https://github.com/TrainTheTrainer/ELIXIR-       EXCELERATE-TtT) – Best practices for training and FAIR data principles  
 - [OHDSI GitHub – Training Materials](https://github.com/OHDSI/TrainingMaterials) – Shared community slide decks, exercises, and guides  
 - [Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/) – Reference chapters for technical and conceptual grounding  
-- [OHDSI Forum – Educators Category](https://forums.ohdsi.org/c/general/education/21) – Discussions around OHDSI pedagogy and training experiences  
 
 **Facilitation Ideas:**  
 - Lead a group discussion using Day 1 SQL examples from the [Book of OHDSI – Chapter 5](https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html).  
