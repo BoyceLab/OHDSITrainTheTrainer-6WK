@@ -33,7 +33,7 @@ blockquote {
 
 /* Increase site title font size and adjust alignment */
 .md-header__title {
-  font-size: 1.4rem;      /* default is ~1rem; try 1.3–1.6rem */
+  font-size: 1.6rem;      /* default is ~1rem; try 1.3–1.6rem */
   font-weight: 700;       /* makes it bold */
   letter-spacing: 0.3px;  /* optional for clarity */
 }
