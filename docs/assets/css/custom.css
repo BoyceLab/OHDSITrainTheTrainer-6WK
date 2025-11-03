@@ -1,0 +1,5 @@
+:root{
+  --md-primary-fg-color: #5b3c88;
+  --md-accent-fg-color:  #9c6fe4;
+}
+blockquote { border-left: 3px solid var(--md-primary-fg-color); padding-left:.8rem; margin-left:0; }
