@@ -68,6 +68,9 @@
 
 > Trainers: Copy this table into your documentation or export it as CSV for tracking participant readiness.
 
+📥 **[Download CSV Template](environment-checklist-template.csv)**  
+_Use this CSV to track participant readiness or import into Excel/Sheets._
+
 ---
 
 ## Deliverables
