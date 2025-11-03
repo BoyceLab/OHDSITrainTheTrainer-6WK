@@ -1,61 +1,76 @@
 site_name: OHDSI Train The Trainer
-- Syllabus: syllabus.md
-- Personas & Learning Paths: personas.md
-- Modules:
-- Environment Walk-through: modules/00-environment-walkthrough.md
-- Day 1 · OMOP Common Data Model: modules/day-01-omop-cdm.md
-- Day 2 · Vocabulary & Data Quality: modules/day-02-vocab-dqd.md
-- Exercises:
-- Day 0 · Environment Checks: exercises/day-00-environment.md
-- Day 1 · Athena & CDM: exercises/day-01-athena-cdm.md
-- Day 2 · Vocab & DQD: exercises/day-02-vocab-dqd.md
-- Day 3 · Cohorts in ATLAS: exercises/day-03-cohorts.md
-- Day 4 · Data Extraction: exercises/day-04-extraction.md
-- Day 5 (Optional) · Treatment Pathways: exercises/day-05-pathways-optional.md
-- Day 6 (Optional) · HADES: exercises/day-06-hades-optional.md
-- Resources:
-- Syllabus (PDF or link): syllabus.md
-- SQL Resources:
-- OMOP SQL Examples: common_artifacts/omop-sql-examples.md
-- Trainer Commentary: instructor_notes/omop-sql-examples-trainer.md
-- ATLAS User Process Guide: common_artifacts/atlas-user-process-guide.md
-- Community & Support:
-- Office Hours: community/office-hours.md
-- Weekly Community Meeting: community/weekly-meeting.md
-- Living FAQ: community/faq.md
-- Resources (General): resources.md
+site_url: https://BoyceLab.github.io/OHDSITrainTheTrainer-6WK
+repo_url: https://github.com/BoyceLab/OHDSITrainTheTrainer-6WK
+repo_name: BoyceLab/OHDSITrainTheTrainer-6WK
 
+theme:
+  name: material
+  font:
+    text: EB Garamond
+  palette:
+    scheme: default
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Syllabus: syllabus.md
+  - Personas & Learning Paths: personas.md
+  - Modules:
+      - Environment Walk-through: modules/00-environment-walkthrough.md
+      - Day 1 · OMOP Common Data Model: modules/day-01-omop-cdm.md
+      - Day 2 · Vocabulary & Data Quality: modules/day-02-vocab-dqd.md
+  - Exercises:
+      - Day 0 · Environment Checks: exercises/day-00-environment.md
+      - Day 1 · Athena & CDM: exercises/day-01-athena-cdm.md
+      - Day 2 · Vocab & DQD: exercises/day-02-vocab-dqd.md
+      - Day 3 · Cohorts in ATLAS: exercises/day-03-cohorts.md
+      - Day 4 · Data Extraction: exercises/day-04-extraction.md
+      - Day 5 (Optional) · Treatment Pathways: exercises/day-05-pathways-optional.md
+      - Day 6 (Optional) · HADES: exercises/day-06-hades-optional.md
+  - Resources:
+      - Environment Checklist Template: common_artifacts/environment-checklist-template.md
+      - Download Checklist (CSV): common_artifacts/environment-checklist-template.csv
+      - OMOP SQL Examples: common_artifacts/omop-sql-examples.md
+      - SQL Validation Mini Lab: common_artifacts/sql-validation-mini-lab.md
+      - ATLAS User Process Guide: common_artifacts/atlas-user-process-guide.md
+  - Community & Support:
+      - Office Hours: community/office-hours.md
+      - Weekly Community Meeting: community/weekly-meeting.md
+      - Living FAQ: community/faq.md
+  - Resources (General): resources.md
 
 markdown_extensions:
-- meta
-- admonition
-- attr_list
-- def_list
-- footnotes
-- md_in_html
-- tables
-- toc:
-permalink: false
-- pymdownx.details
-- pymdownx.superfences
-- pymdownx.tabbed:
-alternate_style: true
-- pymdownx.tasklist:
-custom_checkbox: true
-- pymdownx.highlight
-- pymdownx.inlinehilite
-- pymdownx.emoji:
-emoji_index: !!python/name:material.extensions.emoji.twemoji
-emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
+  - meta
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: false
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
-- search
-
+  - search
 
 extra:
-generator: false
-
+  generator: false
 
 extra_css:
-- assets/css/custom.css
+  - assets/css/custom.css
