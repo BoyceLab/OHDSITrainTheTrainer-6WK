@@ -30,3 +30,17 @@ blockquote {
 .md-nav__link:hover {
   color: var(--md-accent-fg-color);
 }
+
+/* Increase site title font size and adjust alignment */
+.md-header__title {
+  font-size: 1.4rem;      /* default is ~1rem; try 1.3–1.6rem */
+  font-weight: 700;       /* makes it bold */
+  letter-spacing: 0.3px;  /* optional for clarity */
+}
+
+/* Optional: ensure vertical centering with logo */
+.md-header__title, 
+.md-header__topic {
+  line-height: 1.6;
+}
+
