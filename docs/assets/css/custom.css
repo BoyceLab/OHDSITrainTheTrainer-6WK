@@ -44,3 +44,22 @@ blockquote {
   line-height: 1.6;
 }
 
+/* Allow the site title to wrap and push other elements lower */
+.md-header__title {
+  white-space: normal !important;
+  line-height: 1.4;
+  max-width: 70%;   /* adjust as needed to control how wide it gets */
+}
+
+/* Move search and repo links slightly lower */
+.md-header__option,
+.md-search {
+  margin-top: 0.5rem;  /* adds vertical spacing */
+  align-self: flex-end;
+}
+
+/* Optional: slightly reduce padding in the header to fit more content */
+.md-header {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
