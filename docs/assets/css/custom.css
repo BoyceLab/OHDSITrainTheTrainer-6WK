@@ -116,7 +116,7 @@ blockquote {
 
 /* Add padding so content isn’t hidden behind the fixed header */
 .md-main {
-  padding-top: 3.5rem;     /* adjust depending on your header height */
+  padding-top: 2.5rem;     /* adjust depending on your header height */
 }
 
 /* Optional: Add a slight shadow for visual separation */
