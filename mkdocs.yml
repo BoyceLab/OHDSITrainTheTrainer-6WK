@@ -1,0 +1,61 @@
+site_name: OHDSI Train The Trainer
+- Syllabus: syllabus.md
+- Personas & Learning Paths: personas.md
+- Modules:
+- Environment Walk-through: modules/00-environment-walkthrough.md
+- Day 1 · OMOP Common Data Model: modules/day-01-omop-cdm.md
+- Day 2 · Vocabulary & Data Quality: modules/day-02-vocab-dqd.md
+- Exercises:
+- Day 0 · Environment Checks: exercises/day-00-environment.md
+- Day 1 · Athena & CDM: exercises/day-01-athena-cdm.md
+- Day 2 · Vocab & DQD: exercises/day-02-vocab-dqd.md
+- Day 3 · Cohorts in ATLAS: exercises/day-03-cohorts.md
+- Day 4 · Data Extraction: exercises/day-04-extraction.md
+- Day 5 (Optional) · Treatment Pathways: exercises/day-05-pathways-optional.md
+- Day 6 (Optional) · HADES: exercises/day-06-hades-optional.md
+- Resources:
+- Syllabus (PDF or link): syllabus.md
+- SQL Resources:
+- OMOP SQL Examples: common_artifacts/omop-sql-examples.md
+- Trainer Commentary: instructor_notes/omop-sql-examples-trainer.md
+- ATLAS User Process Guide: common_artifacts/atlas-user-process-guide.md
+- Community & Support:
+- Office Hours: community/office-hours.md
+- Weekly Community Meeting: community/weekly-meeting.md
+- Living FAQ: community/faq.md
+- Resources (General): resources.md
+
+
+markdown_extensions:
+- meta
+- admonition
+- attr_list
+- def_list
+- footnotes
+- md_in_html
+- tables
+- toc:
+permalink: false
+- pymdownx.details
+- pymdownx.superfences
+- pymdownx.tabbed:
+alternate_style: true
+- pymdownx.tasklist:
+custom_checkbox: true
+- pymdownx.highlight
+- pymdownx.inlinehilite
+- pymdownx.emoji:
+emoji_index: !!python/name:material.extensions.emoji.twemoji
+emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+
+plugins:
+- search
+
+
+extra:
+generator: false
+
+
+extra_css:
+- assets/css/custom.css
