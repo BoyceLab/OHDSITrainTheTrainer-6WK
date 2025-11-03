@@ -41,7 +41,7 @@ nav:
       - Office Hours: community/office-hours.md
       - Weekly Community Meeting: community/weekly-meeting.md
       - Living FAQ: community/faq.md
-
+  - Acknowledgements: acknowledgements.md
 markdown_extensions:
   - meta
   - admonition
