@@ -32,7 +32,8 @@ nav:
       - Day 1 · Code Snippets: exercises/code_snippets/day-01-snippets.md
       - Day 2 · Vocab & DQD: exercises/day-02-vocab-dqd.md
   - Resources:
-      - Curated Resource List: resources.md         
+      - Curated Resource List: resources.md
+      - Vocabulary & SQL Cheat Sheet: training/day1-omop-cdm/OMOP_Vocabulary_and_SQL_Cheat_Sheet.md
       - Environment Checklist Template: common_artifacts/environment-checklist-template.md
       - OMOP SQL Examples: common_artifacts/omop-sql-examples.md
       - SQL Validation Mini Lab: common_artifacts/sql-validation-mini-lab.md
