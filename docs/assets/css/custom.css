@@ -18,3 +18,15 @@ blockquote {
 }
 
 
+/* Increase font size of top navigation items */
+.md-tabs__link,
+.md-nav__link {
+  font-size: 1.2rem;   /* Increase or decrease to taste */
+  font-weight: 500;     /* Optional: slightly bolder for readability */
+}
+
+/* Optional: adjust hover color for emphasis */
+.md-tabs__link:hover,
+.md-nav__link:hover {
+  color: var(--md-accent-fg-color);
+}
