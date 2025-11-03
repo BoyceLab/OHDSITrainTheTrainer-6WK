@@ -5,11 +5,6 @@
 
 ---
 
-## 📘 Table of Contents
-{:toc}
-
----
-
 ## 🧩 Athena Vocabulary Exploration Exercise
 
 This exercise focuses exclusively on exploring the **OMOP Standardized Vocabularies** using [Athena](https://athena.ohdsi.org/).  
