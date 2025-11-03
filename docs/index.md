@@ -20,13 +20,13 @@ This multi-day training series provides participants with a comprehensive, hands
 
 ## Sample Schedule
 
-| Session | Date & Time | Focus |
+| Time | Session Title | Focus |
 | --- | --- | --- |
-| Environment Walk-through | Fri, Oct 31 · 12:00–1:00 | Access check for data and tools |
-| Day 1 — OMOP Common Data Model | Fri, Nov 7 · 9:30–1:00 | Schema, key tables, Athena |
-| Day 2 — Vocabulary & Data Quality | Fri, Nov 14 · 9:30–1:00 | Concept sets, DQD principles |
-| Day 3 — Cohort Definition w/ ATLAS | Fri, Nov 21 · 9:30–1:00 | Cohorts and characterization |
-| Day 4 — Data Extraction Tools | Mon, Dec 1 · 9:30–1:00 | Build analytic datasets |
-| Post-training | Fri, Dec 12 · 11:30–1:00 | Q&A, next steps |
-| Day 5 (Optional) — Treatment Pathways | Fri, Jan 9 · 9:30–1:00 | Sequences of care |
-| Day 6 (Optional) — HADES | Fri, Jan 16 · 9:30–1:00 | R-based analytics framework |
+| 9:30 am – 9:45 am | Welcome & Introduction | Opening remarks and course overview |
+| 9:45 am – 10:00 am | Value Proposition | What is your "Why?" |
+| 10:45 am – 11:00 am | Break | — |
+| 11:00 am – 11:30 am | Overview of OMOP CDM | Data model structure and design |
+| 11:30 am – 11:50 am | Overview of Vocabulary & Athena | Concepts, relationships, and mapping |
+| 11:50 am – 12:00 pm | Break | — |
+| 12:00 pm – 1:00 pm | Hands-On Exercise | Guided practice using Athena |
+
