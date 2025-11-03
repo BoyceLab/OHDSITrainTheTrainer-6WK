@@ -1,14 +1,14 @@
 # Personas & Learning Paths
 
-This Train-the-Trainer curriculum is designed to support multiple learner roles within OHDSI.  
-Each persona has aligned goals, focus areas, and suggested side exercises for the **six-week program**.
+This *Train-the-Trainer* curriculum supports multiple learner roles within OHDSI.  
+Each persona has aligned goals, focus areas, and suggested exercises using materials in this site — including code snippets, cheat sheets, and curated references.
 
 !!! note
     For background on learner personas in **OHDSI** and **Real-World Evidence** education, see the [**STARDUSTT approach**](https://alstdi.github.io/ALS-RWE/stardustt-approach/).
 
 ---
 
-## Vocabulary / Terminology Experts
+## 🧬 Vocabulary / Terminology Experts
 
 **Goal:**  
 Strengthen understanding of OMOP standardized vocabularies and mapping workflows; teach others how to interpret concepts and relationships.
@@ -19,16 +19,21 @@ Strengthen understanding of OMOP standardized vocabularies and mapping workflows
 - **Week 3:** Cohort Characterization (vocabulary influence on cohorts)
 
 **Core Tools:**  
-Athena · Atlas Concept Sets and Cohort Definitions
+Athena · Atlas Concept Sets and Cohort Definitions  
 
-**Side Exercise:**  
+**Hands-on Materials:**  
+- [Vocabulary & SQL Cheat Sheet](../training/day1-omop-cdm/OMOP_Vocabulary_and_SQL_Cheat_Sheet.md)  
+- [Day 1 Code Snippets](../exercises/code_snippets/day-01-snippets.md)  
+- [Athena Vocabulary Exploration Exercise](../exercises/day-01-athena-cdm.md)
+
+**Side Exercise Ideas:**  
 - Identify standard vs non-standard concepts in Athena.  
-- Create a small Atlas concept set using preferred vs source vocabularies.  
-- Document mapping and descendant logic for discussion.
+- Create a concept set using both SNOMED and ICD vocabularies.  
+- Document “Maps to” and “Is a” relationships using the cheat sheet.  
 
 ---
 
-## Statisticians / Study Design Analysts
+## 📊 Statisticians / Study Design Analysts
 
 **Goal:**  
 Relate OHDSI tools to epidemiologic validity, confounding control, and study design transparency.
@@ -41,14 +46,19 @@ Relate OHDSI tools to epidemiologic validity, confounding control, and study des
 **Core Tools:**  
 ATLAS Characterization · Pathway Analysis · HADES (Characterization / Estimation / Prediction)
 
-**Side Exercise:**  
-- Critique a cohort design for bias or misclassification.  
-- Propose sensitivity analyses or stratification strategies.  
-- Discuss how pathway or estimation models address confounding.
+**Hands-on Materials:**  
+- [Cohort Characterization Exercise](../exercises/day-03-cohorts.md)  
+- [Treatment Pathway Exercise](../exercises/day-05-pathways-optional.md)  
+- [HADES Overview](../exercises/day-06-hades-optional.md)
+
+**Side Exercise Ideas:**  
+- Critique a cohort definition for bias or misclassification.  
+- Design an analysis plan using HADES packages.  
+- Discuss how cohort design choices influence confounding control.  
 
 ---
 
-## Data Analysts / Engineers (SQL-oriented)
+## 🧑‍💻 Data Analysts / Engineers (SQL-Oriented)
 
 **Goal:**  
 Emphasize reproducibility and programmatic access to OMOP data.
@@ -61,14 +71,19 @@ Emphasize reproducibility and programmatic access to OMOP data.
 **Core Tools:**  
 SQL client · Atlas exports · SEARCH · DatabaseConnector · FeatureExtraction
 
-**Side Exercise:**  
-- Export Atlas SQL and parameterize it in R or Python.  
-- Automate queries or extraction specs using version control.  
-- Document provenance and reproducibility steps.
+**Hands-on Materials:**  
+- [SQL Validation Mini Lab](../common_artifacts/sql-validation-mini-lab.md)  
+- [OMOP SQL Examples](../common_artifacts/omop-sql-examples.md)  
+- [Code Snippets](../exercises/code_snippets/day-01-snippets.md)
+
+**Side Exercise Ideas:**  
+- Recreate a concept-based query from the code snippet file.  
+- Automate a cohort export and validation script.  
+- Compare query results before and after applying “Maps to” logic.  
 
 ---
 
-## Clinicians / Clinical Researchers
+## 🩺 Clinicians / Clinical Researchers
 
 **Goal:**  
 Use Atlas for rapid cohort discovery and interpretation; connect clinical reasoning to standardized data.
@@ -81,17 +96,21 @@ Use Atlas for rapid cohort discovery and interpretation; connect clinical reason
 **Core Tools:**  
 Athena (concept interpretation) · Atlas Cohort Editor · Characterization reports
 
-**Side Exercise:**  
-- Define an inclusion/exclusion logic for a simple condition cohort.  
-- Interpret key demographic and measurement characterizations.  
-- Discuss how vocabulary precision influences clinical plausibility.
+**Hands-on Materials:**  
+- [Atlas Review Exercise](../exercises/atlas_review_exercise.md)  
+- [Cohort Characterization Exercise](../exercises/day-03-cohorts.md)
+
+**Side Exercise Ideas:**  
+- Define inclusion/exclusion criteria for a clinical condition cohort.  
+- Interpret baseline characteristics from the Characterization report.  
+- Reflect on how vocabulary precision affects clinical plausibility.  
 
 ---
 
-## Trainers / Facilitators (Meta-Persona)
+## 🧑‍🏫 Trainers / Facilitators (Meta-Persona)
 
 **Goal:**  
-Integrate technical and clinical perspectives; lead sessions effectively across personas.
+Integrate technical and clinical perspectives; guide sessions effectively across personas.
 
 **Focus Weeks:**  
 All weeks (serve as facilitators and reviewers)
@@ -99,12 +118,15 @@ All weeks (serve as facilitators and reviewers)
 **Core Competencies:**  
 Adult learning principles · GitHub workflow for shared materials · Discussion facilitation
 
-**Side Exercise:**  
-- Lead a short demo on a week’s topic (e.g., vocabulary search or cohort review).  
-- Collect and summarize participant reflections.  
-- Update the training repository with lesson feedback and improvements.
+**Hands-on Materials:**  
+- [Trainer Commentary (SQL Examples)](../instructor_notes/omop-sql-examples-trainer.md)  
+- [OMOP SQL Examples](../common_artifacts/omop-sql-examples.md)
+
+**Facilitation Ideas:**  
+- Lead a group discussion using Day 1 code snippets.  
+- Encourage learners to annotate the SQL examples or cheat sheet.  
+- Collect reflections and update this repository with new notes.
 
 ---
 
-*Use these personas as guides for tailoring discussions, side exercises, and homework expectations throughout the six-week OHDSI Train-the-Trainer program.*
-
+*Use these personas as guides for tailoring discussions, weekly exercises, and assignments throughout the six-week OHDSI Train-the-Trainer program.*
