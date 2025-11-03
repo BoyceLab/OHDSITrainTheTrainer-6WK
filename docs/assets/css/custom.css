@@ -1,5 +1,20 @@
-:root{
+:root {
+  /* Theme color overrides */
   --md-primary-fg-color: #5b3c88;
   --md-accent-fg-color:  #9c6fe4;
 }
-blockquote { border-left: 3px solid var(--md-primary-fg-color); padding-left:.8rem; margin-left:0; }
+
+/* Navbar logo sizing */
+.md-header__button.md-logo img {
+  height: 36px;     /* Adjust as needed */
+  width: auto;
+}
+
+/* Optional: style for blockquotes (note boxes, etc.) */
+blockquote {
+  border-left: 3px solid var(--md-primary-fg-color);
+  padding-left: .8rem;
+  margin-left: 0;
+}
+
+
