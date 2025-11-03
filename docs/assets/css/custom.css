@@ -123,3 +123,35 @@ blockquote {
 .md-header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
+
+/* --- Reduce header height and vertical spacing --- */
+.md-header {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+  min-height: 2.8rem !important;   /* reduces the overall bar height */
+}
+
+/* Adjust the inner flex container */
+.md-header__inner {
+  align-items: center !important;
+  gap: 0.5rem !important;          /* controls spacing between logo/title/search */
+}
+
+/* Tighten spacing around logo */
+.md-header__button.md-logo {
+  margin: 0 0.5rem 0 0 !important;
+  padding: 0 !important;
+}
+
+/* Tighten spacing above and below the navigation tabs (if present) */
+.md-tabs {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+/* If you fixed the header, ensure no extra empty offset */
+.md-main {
+  padding-top: 4rem !important;   /* adjust to fit reduced header height */
+}
