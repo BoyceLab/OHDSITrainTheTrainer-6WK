@@ -118,15 +118,16 @@ All weeks (serve as facilitators and reviewers)
 **Core Competencies:**  
 Adult learning principles · GitHub workflow for shared materials · Discussion facilitation
 
-**Hands-on Materials:**  
-- [Trainer Commentary (SQL Examples)](../instructor_notes/omop-sql-examples-trainer.md)  
-- [OMOP SQL Examples](../common_artifacts/omop-sql-examples.md)
+**Recommended External Resources:**  
+- [ELIXIR-Exelerate Train the Trainer GitHub Repository: Training Guidelines](https://rdmkit.elixir-europe.org/training.htm](https://github.com/TrainTheTrainer/ELIXIR-       EXCELERATE-TtT) – Best practices for training and FAIR data principles  
+- [OHDSI GitHub – Training Materials](https://github.com/OHDSI/TrainingMaterials) – Shared community slide decks, exercises, and guides  
+- [Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/) – Reference chapters for technical and conceptual grounding  
+- [OHDSI Forum – Educators Category](https://forums.ohdsi.org/c/general/education/21) – Discussions around OHDSI pedagogy and training experiences  
 
 **Facilitation Ideas:**  
-- Lead a group discussion using Day 1 code snippets.  
-- Encourage learners to annotate the SQL examples or cheat sheet.  
-- Collect reflections and update this repository with new notes.
-
+- Lead a group discussion using Day 1 SQL examples from the [Book of OHDSI – Chapter 5](https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html).  
+- Invite learners to annotate SQL or vocabulary examples with their domain knowledge.  
+- Use collaborative tools (e.g., HackMD, GitHub issues) to collect questions and reflections, then contribute improvements back to training materials.  
 ---
 
 *Use these personas as guides for tailoring discussions, weekly exercises, and assignments throughout the six-week OHDSI Train-the-Trainer program.*
