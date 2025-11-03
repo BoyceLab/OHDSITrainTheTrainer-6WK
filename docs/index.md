@@ -1,4 +1,4 @@
-# OHDSI Train-the-Trainer
+# OHDSI/OMOP Train-the-Trainer
 
 Learn how to navigate the OHDSI ecosystem—from data model to advanced analytics.
 
