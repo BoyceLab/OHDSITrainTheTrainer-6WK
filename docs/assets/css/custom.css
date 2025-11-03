@@ -105,3 +105,21 @@ blockquote {
   padding-bottom: 0.2rem;
 }
 
+/* Make the top header bar fixed on scroll */
+.md-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;         /* keeps it above content */
+}
+
+/* Add padding so content isn’t hidden behind the fixed header */
+.md-main {
+  padding-top: 5rem;     /* adjust depending on your header height */
+}
+
+/* Optional: Add a slight shadow for visual separation */
+.md-header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
