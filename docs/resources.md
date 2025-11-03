@@ -1,51 +1,59 @@
 # Resources 
 
-> A comprehensive library for trainers, analysts, and learners in the OHDSI Train-the-Trainer program.
+> A comprehensive library for trainers, analysts, and learners in the **OHDSI Train-the-Trainer** program.
 
 ---
 
 ## 🌍 Core OHDSI Resources
-- **Join the Journey** → [https://www.ohdsi.org/join-the-journey/](https://www.ohdsi.org/join-the-journey/)
-- **Athena Vocabulary Browser** → [https://athena.ohdsi.org/search-terms/start](https://athena.ohdsi.org/search-terms/start)
-- **OMOP Common Data Model** → [https://ohdsi.github.io/CommonDataModel/index.html](https://ohdsi.github.io/CommonDataModel/index.html)
-- **OMOP CDM FAQ** → [https://ohdsi.github.io/CommonDataModel/faq.html](https://ohdsi.github.io/CommonDataModel/faq.html)
-- **The Book of OHDSI** → [https://ohdsi.github.io/TheBookOfOhdsi/](https://ohdsi.github.io/TheBookOfOhdsi/)
-- **OHDSI YouTube Tutorials** → [https://youtube.com/playlist?list=PLpzbqK7kvfeXRQktX0PV-cRpb3EFA2e7Z](https://youtube.com/playlist?list=PLpzbqK7kvfeXRQktX0PV-cRpb3EFA2e7Z)
-- **OHDSI Forums** → [https://forums.ohdsi.org/](https://forums.ohdsi.org/)
-- **Atlas Demo Environment** → [https://atlas-demo.ohdsi.org/](https://atlas-demo.ohdsi.org/)
-- **OHDSI Software Tools** → [https://ohdsi.org/software-tools/](https://ohdsi.org/software-tools/)
-- **OHDSI Community Calls** → [https://ohdsi.org/community-calls/](https://ohdsi.org/community-calls/)
-- **OHDSI Workgroups** → [https://www.ohdsi.org/workgroups/](https://www.ohdsi.org/workgroups/)
-- **OHDSI Events** → [https://ohdsi.org/2023-ohdsi-events/](https://ohdsi.org/2023-ohdsi-events/)
-- **OHDSI LinkedIn** → [https://www.linkedin.com/company/ohdsi](https://www.linkedin.com/company/ohdsi)
-- **OHDSI Newsletter** → [https://ohdsi.org/subscribe-to-our-newsletter/](https://ohdsi.org/subscribe-to-our-newsletter/)
-- **GitHub Learning Guide** → [https://docs.github.com/en/get-started/quickstart/hello-world](https://docs.github.com/en/get-started/quickstart/hello-world)
-- **Microsoft Teams Environment (example form)** → [https://forms.office.com/Pages/ResponsePage.aspx?id=lAAPoyCRq0q6TOVQkCOy1ZyG6Ud_r2tKuS0HcGnqiQZUQ05MOU9BSzEwOThZVjNQVVFGTDNZRENONiQlQCN0PWcu](https://forms.office.com/Pages/ResponsePage.aspx?id=lAAPoyCRq0q6TOVQkCOy1ZyG6Ud_r2tKuS0HcGnqiQZUQ05MOU9BSzEwOThZVjNQVVFGTDNZRENONiQlQCN0PWcu)
-- **MIMIC-IV Demo Data (OMOP CDM)** → [https://physionet.org/content/mimic-iv-demo-omop/0.9/1_omop_data_csv/](https://physionet.org/content/mimic-iv-demo-omop/0.9/1_omop_data_csv/)
+
+> Key official sites and references maintained by the global OHDSI community.
+
+- **[Join the Journey](https://www.ohdsi.org/join-the-journey/)** – overview of OHDSI’s mission and collaboration model  
+- **[Athena Vocabulary Browser](https://athena.ohdsi.org/search-terms/start)** – explore OMOP vocabularies and concepts  
+- **[OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/index.html)** – full documentation and specifications  
+- **[OMOP CDM FAQ](https://ohdsi.github.io/CommonDataModel/faq.html)** – answers to common questions  
+- **[The Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/)** – foundational text on OHDSI methods and tools  
+- **[Atlas Demo Environment](https://atlas-demo.ohdsi.org/)** – interactive OHDSI Atlas demo instance  
+- **[OHDSI Software Tools](https://ohdsi.org/software-tools/)** – overview of Atlas, Achilles, DataQualityDashboard, and more  
+- **[MIMIC-IV Demo Data (OMOP CDM)](https://physionet.org/content/mimic-iv-demo-omop/0.9/1_omop_data_csv/)** – example dataset mapped to OMOP CDM  
 
 ---
 
 ## 🧠 Learning & Training
-- **OHDSI YouTube Channel:** [https://www.youtube.com/@OHDSI](https://www.youtube.com/@OHDSI)
-- **Atlas Documentation:** [https://ohdsi.github.io/Atlas/](https://ohdsi.github.io/Atlas/)
+
+> Educational materials, tutorials, and recorded sessions to deepen OMOP/OHDSI knowledge.
+
+- **[OHDSI YouTube Tutorials Playlist](https://youtube.com/playlist?list=PLpzbqK7kvfeXRQktX0PV-cRpb3EFA2e7Z)** – foundational training videos  
+- **[EHDEN Academy — All Courses](https://academy.ehden.eu/course/index.php?categoryid=all)** – free self-paced learning modules on OMOP, ETL, and data quality  
+- **[Introduction to OMOP: Your Frequently Asked Questions Answered](https://ilearn.tuftsctsi.org/product?catalog=D1RS_2025_18)** – Tufts CTSI course by *Danielle Boyce (ALS TDI)* & *Pavel Goriacko (Montefiore)*  
+- **[OHDSI YouTube Channel](https://www.youtube.com/@OHDSI)** – weekly community calls, symposium recordings, and lightning talks  
 
 ---
 
-## ⚙️ Tools, Documentation & Technical Resources
-- **Common Data Model Specs (GitHub):** [https://github.com/OHDSI/CommonDataModel](https://github.com/OHDSI/CommonDataModel)
-- **White Rabbit / Rabbit in a Hat:** [https://github.com/OHDSI/WhiteRabbit](https://github.com/OHDSI/WhiteRabbit)
-- **Usagi:** [https://github.com/OHDSI/Usagi](https://github.com/OHDSI/Usagi)
-- **Data Quality Dashboard (DQD):** [https://github.com/OHDSI/DataQualityDashboard](https://github.com/OHDSI/DataQualityDashboard)
-- **HADES R Packages:** [https://ohdsi.github.io/Hades/](https://ohdsi.github.io/Hades/)
+## 💬 Community & Collaboration
+
+> Engage with the global OHDSI network — join calls, workgroups, and discussion forums.
+
+- **[OHDSI Forums](https://forums.ohdsi.org/)** – community Q&A and announcements  
+- **[OHDSI Community Calls](https://ohdsi.org/community-calls/)** – weekly live sessions and recordings  
+- **[OHDSI Workgroups](https://www.ohdsi.org/workgroups/)** – thematic and regional working groups  
+- **[Workgroup Sign-Up (Microsoft Teams)](https://forms.office.com/Pages/ResponsePage.aspx?id=lAAPoyCRq0q6TOVQkCOy1ZyG6Ud_r2tKuS0HcGnqiQZUQ05MOU9BSzEwOThZVjNQVVFGTDNZRENONiQlQCN0PWcu)** – request access to OHDSI’s Teams collaboration space  
+- **[OHDSI LinkedIn](https://www.linkedin.com/company/ohdsi)** – connect professionally with the OHDSI network  
+- **[OHDSI Newsletter](https://ohdsi.org/subscribe-to-our-newsletter/)** – subscribe for updates and events  
 
 ---
 
-## 🧑‍🤝‍🧑 Community Engagement
-- **OHDSI Community Calls:** [https://ohdsi.org/community-calls/](https://ohdsi.org/community-calls/)
-- **OHDSI Workgroups:** [https://ohdsi.org/workgroups/](https://ohdsi.org/workgroups/)
-- **OHDSI LinkedIn Page:** [https://www.linkedin.com/company/ohdsi](https://www.linkedin.com/company/ohdsi)
-- **OHDSI Newsletter:** [https://ohdsi.org/subscribe-to-our-newsletter/](https://ohdsi.org/subscribe-to-our-newsletter/)
-- **Upcoming Events:** [https://ohdsi.org/2023-ohdsi-events/](https://ohdsi.org/2023-ohdsi-events/)
+## 🧰 Technical & GitHub Resources
+
+> Tools, repositories, and documentation for developers and data engineers.
+
+- **[OHDSI on GitHub](https://github.com/OHDSI)** – official OHDSI codebase, pipelines, and utilities  
+- **[Common Data Model Specs](https://github.com/OHDSI/CommonDataModel)** – CDM structure and SQL DDLs  
+- **[White Rabbit / Rabbit in a Hat](https://github.com/OHDSI/WhiteRabbit)** – tools for data profiling and ETL design  
+- **[Usagi](https://github.com/OHDSI/Usagi)** – vocabulary mapping and concept alignment  
+- **[Data Quality Dashboard (DQD)](https://github.com/OHDSI/DataQualityDashboard)** – automated data quality assessment for OMOP CDM  
+- **[HADES R Packages](https://ohdsi.github.io/Hades/)** – collection of OHDSI R libraries for analytics  
+- **[GitHub Learning Guide](https://docs.github.com/en/get-started/quickstart/hello-world)** – learn GitHub basics for version control and collaboration  
 
 ---
 
