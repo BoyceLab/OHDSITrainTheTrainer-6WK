@@ -23,7 +23,8 @@
 
 > Educational materials, tutorials, and recorded sessions to deepen OMOP/OHDSI knowledge.
 
-### [OMOP Vocabulary & SQL Cheat Sheet](common_artifacts/OMOP_Vocabulary_and_SQL_Cheat_Sheet.md)
+### [OMOP Vocabulary & SQL Cheat Sheet](common_artifacts/omop-vocab-sql-cheat-sheet.md)
+omop-vocab-sql-cheat-sheet.md
 > A concise, one-page reference summarizing OMOP vocabulary tables, key SQL joins, and common concept-relationship logic.  
 > Ideal for Day 1 participants and anyone reviewing OMOP data structures.
 
