@@ -41,13 +41,9 @@ By the end of this session, you should be able to:
 ---
 
 ## 🧭 Hands-on Activities
-
-### 1️⃣ Explore Concepts in Athena
-1. Go to [Athena](https://athena.ohdsi.org/).  
-2. Search for “Major depressive disorder.”  
-3. Identify the **standard concept** (*S* flag).  
-4. Record `concept_id`, `concept_code`, `vocabulary_id`.  
-5. Compare standard vs non-standard entries.
+- The full in-class exercise lives here: **[Day 1 · Exercises](../exercises/day-01-athena-cdm.md)**.
+- Need queries? See **[Day 1 · Code Snippets](../exercises/code_snippets/day-01-snippets.md)**.
+- Slides: **[PPTX](../training/day1-omop-cdm/Exploring_Concepts_with_OMOP_and_SQL.pptx)**.
 
 ---
 
