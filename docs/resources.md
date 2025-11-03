@@ -1,4 +1,4 @@
-# Resources (Curated)
+# Resources 
 
 > A comprehensive library for trainers, analysts, and learners in the OHDSI Train-the-Trainer program.
 
