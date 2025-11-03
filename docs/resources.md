@@ -51,7 +51,7 @@
 
 ---
 
-### [ELIXIR-EXCELERATE Train-the-Trainer Repository (2016–17)](https://github.com/TrainTheTrainer/ELIXIR-EXCELERATE-TtT)
+### [ELIXIR-EXCELERATE Train-the-Trainer Repository)](https://github.com/TrainTheTrainer/ELIXIR-EXCELERATE-TtT)
 
 > A foundational **Train-the-Trainer** resource developed as part of the **ELIXIR / EXCELERATE** project.  
 > This GitHub repository includes slides, materials, and guidance on training frameworks and community building across data networks.
