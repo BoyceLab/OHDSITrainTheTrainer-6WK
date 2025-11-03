@@ -1,11 +1,9 @@
 # Day 2 · Vocabulary & Data Quality
 
 
-## Objectives
-- Concept relationships and concept sets
-- DQD principles
+# 🚧 Page Under Construction
 
+This section of the *OHDSI Train-the-Trainer* site is currently being developed.  
+Please check back soon for new materials, exercises, and resources.
 
-## Hands-on
-- Build a concept set in ATLAS
-- Explore DQD checks
+> 💡 In the meantime, explore the [Resources](../resources.md) or [Modules](../modules/day-01-omop-cdm.md) sections for available content.
