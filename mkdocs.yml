@@ -27,7 +27,7 @@ nav:
       - Day 1 · OMOP Common Data Model: modules/day-01-omop-cdm.md
       - Day 2 · Vocabulary & Data Quality: modules/day-02-vocab-dqd.md
   - Exercises:
-      - Day 0 · Environment Checks: exercises/day-00-environment.md
+      # - Day 0 · Environment Checks: exercises/day-00-environment.md
       - Day 1 · Athena & CDM: exercises/day-01-athena-cdm.md
       - Day 1 · Code Snippets: exercises/code_snippets/day-01-snippets.md
       - Day 2 · Vocab & DQD: exercises/day-02-vocab-dqd.md
