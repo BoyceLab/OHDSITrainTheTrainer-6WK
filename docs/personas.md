@@ -19,7 +19,7 @@ Strengthen understanding of OMOP standardized vocabularies and mapping workflows
 - **Week 3:** Cohort Characterization (vocabulary influence on cohorts)
 
 **Core Tools:**  
-Athena · Usagi · Atlas Concept Sets
+Athena · Atlas Concept Sets
 
 **Side Exercise:**  
 - Identify standard vs non-standard concepts in Athena.  
