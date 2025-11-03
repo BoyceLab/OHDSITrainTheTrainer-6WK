@@ -34,7 +34,7 @@ By the end of this session, you should be able to:
 ---
 
 ## 🧠 Slides & Materials
-- 📑 **Lecture slides:** [Exploring Concepts with OMOP and SQL (PPTX)](../training/day1-omop-cdm/Exploring_Concepts_with_OMOP_and_SQL.pptx)  
+- 📑 **Lecture slides:** [Download Day 1 Slides (PPTX)](../training/day1-omop-cdm/Day1.pptx)
 - 🧩 **SQL Examples:** [Day 1 · Code Snippets](../exercises/code_snippets/day-01-snippets.md)  
 - 📘 **Cheat Sheet:** [OMOP Vocabulary and SQL Cheat Sheet](../training/day1-omop-cdm/OMOP_Vocabulary_and_SQL_Cheat_Sheet.md)
 
@@ -84,14 +84,13 @@ WHERE cr.concept_id_1 = <standard_concept_id>;
 - Note hierarchical links for concept set creation.
 
 ---
-
 ## 🧮 Homework / Quiz Highlights
-1. Every data value in OMOP is a *concept* — **True**.  
-2. `concept_id` is the unique OMOP integer identifier.  
-3. Only **standard** concepts are used for analysis.  
-4. Relationships between concepts are found in `concept_relationship`.  
-5. A single `concept_name` may map to multiple IDs (**True**).  
-
+!!! tip "Check your understanding"
+    The Day 1 self-check quiz and practice tasks are included in  
+    **[Day 1 · Exercises](../exercises/day-01-athena-cdm.md)**.  
+    Use the **[Cheat Sheet](../training/day1-omop-cdm/OMOP_Vocabulary_and_SQL_Cheat_Sheet.md)** and  
+    **[Day 1 Slides](../training/day1-omop-cdm/Day1.pptx)** for reference.
+ 
 > See the slides and cheat sheet for full practice queries.
 
 ---
