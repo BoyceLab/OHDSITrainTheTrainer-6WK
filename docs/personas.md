@@ -119,14 +119,13 @@ All weeks (serve as facilitators and reviewers)
 Adult learning principles · GitHub workflow for shared materials · Discussion facilitation
 
 **Recommended External Resources:**  
-- [ELIXIR-Exelerate Train the Trainer GitHub Repository: Training Guidelines](https://github.com/TrainTheTrainer/ELIXIR-EXCELERATE-TtT) – Best practices for training and FAIR data principles  
-- [OHDSI GitHub – Training Materials](https://github.com/OHDSI/TrainingMaterials) – Shared community slide decks, exercises, and guides  
+- [ELIXIR-Exelerate Train the Trainer GitHub Repository: Training Guidelines](https://github.com/TrainTheTrainer/ELIXIR-EXCELERATE-TtT) – Best practices for training and FAIR data principles    
 - [Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/) – Reference chapters for technical and conceptual grounding  
 
 **Facilitation Ideas:**  
-- Lead a group discussion using Day 1 SQL examples from the [Book of OHDSI – Chapter 5](https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html).  
+- Lead a group discussion using Day 1 exercises.  
 - Invite learners to annotate SQL or vocabulary examples with their domain knowledge.  
-- Use collaborative tools (e.g., HackMD, GitHub issues) to collect questions and reflections, then contribute improvements back to training materials.  
+- Use collaboration tools to collect questions and reflections, then contribute improvements back to training materials.  
 ---
 
 *Use these personas as guides for tailoring discussions, weekly exercises, and assignments throughout the six-week OHDSI Train-the-Trainer program.*
