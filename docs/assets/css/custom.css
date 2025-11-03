@@ -63,3 +63,45 @@ blockquote {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+
+/* 1) Let the site title wrap (remove the "..." truncation) */
+.md-header__title .md-ellipsis {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+}
+
+/* 2) Allow header items to wrap onto multiple rows */
+.md-header__inner {
+  display: flex;
+  flex-wrap: wrap; /* critical */
+}
+
+/* 3) Give the title most of the first row */
+.md-header__title {
+  flex: 1 1 70%;
+  line-height: 1.4;
+}
+
+/* 4) Put search on its own row, full width */
+.md-search {
+  order: 3;                /* push below title */
+  flex: 1 1 100%;
+  margin-top: 0.75rem;
+}
+
+/* 5) (Optional) also push the GitHub repo link to the second row, right-aligned */
+.md-header__source {
+  order: 4;                /* below as well */
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+/* Tweak spacing in the header a touch */
+.md-header {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
