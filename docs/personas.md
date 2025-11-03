@@ -119,7 +119,7 @@ All weeks (serve as facilitators and reviewers)
 Adult learning principles · GitHub workflow for shared materials · Discussion facilitation
 
 **Recommended External Resources:**  
-- [ELIXIR-Exelerate Train the Trainer GitHub Repository: Training Guidelines](https://rdmkit.elixir-europe.org/training.htm](https://github.com/TrainTheTrainer/ELIXIR-       EXCELERATE-TtT) – Best practices for training and FAIR data principles  
+- [ELIXIR-Exelerate Train the Trainer GitHub Repository: Training Guidelines](https://github.com/TrainTheTrainer/ELIXIR-EXCELERATE-TtT) – Best practices for training and FAIR data principles  
 - [OHDSI GitHub – Training Materials](https://github.com/OHDSI/TrainingMaterials) – Shared community slide decks, exercises, and guides  
 - [Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/) – Reference chapters for technical and conceptual grounding  
 
