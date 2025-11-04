@@ -6,30 +6,40 @@ You’ll learn how data are organized, standardized, and queried using the OMOP 
 
 ---
 
-## 🎯 Objectives
-By the end of this session, you should be able to:
-- Explain the purpose of the OMOP CDM and its standardized structure.  
-- Identify and describe **core CDM tables** (`person`, `condition_occurrence`, `drug_exposure`, etc.).  
-- Understand the **role of vocabulary tables** (`concept`, `concept_relationship`, `concept_ancestor`).  
-- Distinguish between **standard vs non-standard concepts**.  
-- Write basic **SQL queries** to explore OMOP data.  
-- Use the **Athena vocabulary browser** to find standard concepts.
+# 🗓️ Day 1: OMOP Common Data Model (CDM)
+
+## 📘 Required Reading: *The Book of OHDSI*
+
+| Chapter | Section | Required |
+|---------|---------|----------|
+| Chapter 1: The OHDSI Community | – | Optional |
+| Chapter 2: Where to Begin | – | Optional |
+| Chapter 4: The Common Data Model | 4.1 Design Principles, 4.2 Data Model Conventions, 4.3 CDM Standardized Tables | ✅ Required |
+| Chapter 5: Standardized Vocabularies | 5.1 Why Vocabularies, 5.2 Concepts, 5.3 Relationships, 5.4 Hierarchy | ✅ Required |
+
+[📖 Read the Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/)
 
 ---
 
-## 🧩 Agenda
+## 🎯 Learning Objectives
 
-| Time | Topic |
-|:--|:--|
-| 09:00 – 09:30 | Welcome & Overview of OMOP CDM |
-| 09:30 – 10:30 | Core Tables & Relationships |
-| 10:30 – 11:00 | Break |
-| 11:00 – 12:00 | Exploring the OMOP Vocabulary |
-| 12:00 – 13:00 | Lunch |
-| 13:00 – 14:00 | Hands-on: Querying Concepts with SQL |
-| 14:00 – 14:45 | Demo: Using Athena |
-| 14:45 – 15:15 | Recap & Discussion |
-| 15:15 – 15:30 | Homework & Next Steps |
+1. Gain familiarity with OHDSI, OMOP CDM, and standardized vocabularies  
+2. Understand concept hierarchy building and export concept IDs for SQL pipelines  
+3. Understand why standardized vocabularies matter  
+
+---
+
+## 🕘 Session Agenda
+
+| Time | Session Title |
+|------|----------------|
+| 9:30 am – 9:45 am | Welcome and Introduction |
+| 9:45 am – 10:00 am | Value Proposition |
+| 10:45 am – 11:00 am | **Break** |
+| 11:00 am – 11:30 am | Overview of OMOP CDM |
+| 11:30 am – 11:50 am | Overview of Vocabulary and Athena |
+| 11:50 am – 12:00 pm | **Break** |
+| 12:00 pm – 1:00 pm | Hands-on Exercise |
 
 ---
 
