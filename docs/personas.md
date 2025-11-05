@@ -22,7 +22,7 @@ Strengthen understanding of OMOP standardized vocabularies and mapping workflows
 Athena · Atlas Concept Sets and Cohort Definitions  
 
 **Hands-on Materials:**  
-- [Vocabulary & SQL Cheat Sheet](../training/day1-omop-cdm/OMOP_Vocabulary_and_SQL_Cheat_Sheet.md)  
+- [Vocabulary & SQL Cheat Sheet](common_artifacts/omop-vocab-sql-cheat-sheet.md)  
 - [Day 1 Code Snippets](../exercises/code_snippets/day-01-snippets.md)  
 - [Athena Vocabulary Exploration Exercise](../exercises/day-01-athena-cdm.md)
 
