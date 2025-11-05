@@ -18,15 +18,4 @@ This multi-day training series provides participants with a comprehensive, hands
     All content in `docs/` is **version-controlled**, so updates and new contributions are tracked automatically.
 
 
-## Sample Schedule
-
-| Time | Session Title | Focus |
-| --- | --- | --- |
-| 9:30 am – 9:45 am | Welcome & Introduction | Opening remarks and course overview |
-| 9:45 am – 10:00 am | Value Proposition | What is your "Why?" |
-| 10:45 am – 11:00 am | Break | — |
-| 11:00 am – 11:30 am | Overview of OMOP CDM | Data model structure and design |
-| 11:30 am – 11:50 am | Overview of Vocabulary & Athena | Concepts, relationships, and mapping |
-| 11:50 am – 12:00 pm | Break | — |
-| 12:00 pm – 1:00 pm | Hands-On Exercise | Guided practice using Athena |
 
