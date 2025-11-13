@@ -99,7 +99,7 @@ WHERE cr.concept_id_1 = <standard_concept_id>;
     The Day 1 self-check quiz and practice tasks are included in  
     **[Day 1 · Exercises](../exercises/day-01-athena-cdm.md)**.  
     Use the **[Cheat Sheet](../training/day1-omop-cdm/OMOP_Vocabulary_and_SQL_Cheat_Sheet.md)** and  
-    **[Day 1 Slides](../training/day1-omop-cdm/Day1.pptx)** for reference.
+    **[Day 1 Slides](../training/day1-omop-cdm/Day1.pdf)** for reference.
  
 > See the slides and cheat sheet for full practice queries.
 
