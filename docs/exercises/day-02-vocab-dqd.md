@@ -1,8 +1,287 @@
-# Exercises · Day 2 — Atlas
-# 🚧 Page Under Construction
+# Exercises --- Day 2: ATLAS
 
-This section of the *OHDSI Train-the-Trainer* site is currently being developed.  
-Please check back soon for new materials, exercises, and resources.
+## Study Examples & Supporting Material
 
-> 💡 In the meantime, explore the [Resources](../resources.md) or [Modules](../modules/day-01-omop-cdm.md) sections for available content.
+### Semaglutide NAION Study
 
+-   **Study repo:** https://github.com/ohdsi-studies/SemaglutideNaion
+-   **Protocol:**
+    https://ohdsi-studies.github.io/SemaglutideNaion/protocol.html
+-   **Manuscript:**
+    https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2830475
+
+### Data Quality Resources
+
+-   **Kahn et al. Framework:** https://pubmed.ncbi.nlm.nih.gov/27713905/
+-   **OHDSI Data Quality Dashboard:**
+    https://data.ohdsi.org/DataQualityDashboard/
+
+## Words to Search
+
+-   Chlorpropamide
+-   Sulfonylureas
+
+# OMOP Concept Exploration Notebook (Databricks)
+
+This notebook explores **concept_id = 1594973** in the OMOP CDM using
+Databricks SQL.
+
+------------------------------------------------------------------------
+
+## Cell 1 --- Intro
+
+``` python
+%md
+# Explore OMOP Concept 1594973
+
+This notebook inspects the OMOP concept:
+
+- Basic concept details
+- Ancestors
+- Descendants
+- Direct relationships
+- Drug exposures (exact + descendants)
+```
+
+------------------------------------------------------------------------
+
+## Cell 2 --- Set Parameter
+
+``` python
+concept_id = 1594973
+print(f"Using concept_id = {concept_id}")
+```
+
+------------------------------------------------------------------------
+
+## Cell 3 --- Concept Details
+
+``` sql
+SELECT *
+FROM concept
+WHERE concept_id = 1594973;
+```
+
+------------------------------------------------------------------------
+
+## Cell 4 --- Ancestors
+
+``` sql
+SELECT
+  ca.ancestor_concept_id,
+  a.concept_name AS ancestor_concept_name,
+  ca.min_levels_of_separation
+FROM concept_ancestor ca
+JOIN concept a
+  ON ca.ancestor_concept_id = a.concept_id
+WHERE ca.descendant_concept_id = 1594973
+ORDER BY ca.min_levels_of_separation;
+```
+
+------------------------------------------------------------------------
+
+## Cell 5 --- Descendants
+
+``` sql
+SELECT
+  ca.descendant_concept_id,
+  d.concept_name AS descendant_concept_name,
+  ca.min_levels_of_separation
+FROM concept_ancestor ca
+JOIN concept d
+  ON ca.descendant_concept_id = d.concept_id
+WHERE ca.ancestor_concept_id = 1594973
+ORDER BY ca.min_levels_of_separation, ca.descendant_concept_id;
+```
+
+------------------------------------------------------------------------
+
+## Cell 6 --- Direct Relationships
+
+``` sql
+SELECT
+  cr.concept_id_1,
+  c1.concept_name AS concept_1_name,
+  cr.relationship_id,
+  cr.concept_id_2,
+  c2.concept_name AS concept_2_name
+FROM concept_relationship cr
+LEFT JOIN concept c1 ON cr.concept_id_1 = c1.concept_id
+LEFT JOIN concept c2 ON cr.concept_id_2 = c2.concept_id
+WHERE cr.concept_id_1 = 1594973
+   OR cr.concept_id_2 = 1594973;
+```
+
+------------------------------------------------------------------------
+
+## Cell 7 --- Drug Exposures (Exact Only)
+
+``` sql
+SELECT *
+FROM drug_exposure
+WHERE drug_concept_id = 1594973;
+```
+
+------------------------------------------------------------------------
+
+## Cell 8 --- Drug Exposures (Concept + Descendants)
+
+``` sql
+WITH concept_set AS (
+  SELECT descendant_concept_id AS concept_id
+  FROM concept_ancestor
+  WHERE ancestor_concept_id = 1594973
+  UNION
+  SELECT 1594973 AS concept_id
+)
+
+SELECT *
+FROM drug_exposure de
+JOIN concept_set cs
+  ON de.drug_concept_id = cs.concept_id;
+```
+
+------------------------------------------------------------------------
+
+## Cell 9 --- Summary Counts
+
+``` sql
+WITH concept_set AS (
+  SELECT descendant_concept_id AS concept_id
+  FROM concept_ancestor
+  WHERE ancestor_concept_id = 1594973
+  UNION
+  SELECT 1594973 AS concept_id
+)
+
+SELECT
+  de.drug_concept_id,
+  c.concept_name,
+  COUNT(*) AS exposure_count,
+  COUNT(DISTINCT person_id) AS person_count
+FROM drug_exposure de
+JOIN concept_set cs
+  ON de.drug_concept_id = cs.concept_id
+JOIN concept c
+  ON de.drug_concept_id = c.concept_id
+GROUP BY de.drug_concept_id, c.concept_name
+ORDER BY exposure_count DESC;
+```
+
+------------------------------------------------------------------------
+
+# Concept ID Lists for In-class Exercises
+
+## B.1.5 Concept: DPP4 inhibitors
+
+    43013884
+    40239216
+    40166035
+    1580747
+    19122137
+
+## B.1.6 Concept: semaglutide
+
+    793143
+
+## B.1.7 Concept: SGLT2 inhibitors
+
+    43526465
+    44785829
+    45774751
+    793293
+
+## B.1.8 Concept: Sulfonylureas
+
+    1594973
+    1597756
+    1560171
+    19097821
+    1559684
+    1502809
+    1502855
+
+## B.1.9 Concept: Other anti-diabetics
+
+    1529331
+    1530014
+    730548
+    19033498
+    19001409
+    19059796
+    19001441
+    1510202
+    1502826
+    1525215
+    1516766
+    1547504
+    1515249
+
+## B.1.10 Concept: Insulin
+
+    1596977
+    1550023
+    1567198
+    1502905
+    1513876
+    1531601
+    1586346
+    1544838
+    1516976
+    1590165
+    1513849
+    1562586
+    1588986
+    1513843
+    1586369
+    35605670
+    35602717
+    21600713
+    19078608
+
+## B.1.11 Concept: Metformin
+
+    1503297
+
+## B.1.12 Concept: Secondary diabetes mellitus
+
+    195771
+    761051
+
+## B.1.13 Concept: Type 1 diabetes mellitus
+
+    40484649
+    42689695
+    765533
+    43531006
+    765650
+    45770986
+    201254
+    45768456
+    40484648
+    4128019
+    435216
+
+## B.1.14 Concept: Type 2 diabetes mellitus
+
+    443238
+    201820
+    442793
+    40484648
+    201254
+    435216
+    195771
+    761051
+    4016045
+    40484649
+    43531009
+    4024659
+
+## B.1.15 Concept: GLP-1 receptor agonists excluding semaglutide
+
+    45774435
+    1583722
+    40170911
+    44506754
+    793143
+    44816332
