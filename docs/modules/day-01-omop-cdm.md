@@ -34,12 +34,12 @@ You’ll learn how data are organized, standardized, and queried using the OMOP 
 | Time | Session Title |
 |------|----------------|
 | 9:30 am – 9:45 am | Welcome and Introduction |
-| 9:45 am – 10:00 am | Value Proposition |
-| 10:45 am – 11:00 am | **Break** |
-| 11:00 am – 11:30 am | Overview of OMOP CDM |
-| 11:30 am – 11:50 am | Overview of Vocabulary and Athena |
-| 11:50 am – 12:00 pm | **Break** |
-| 12:00 pm – 1:00 pm | Hands-on Exercise |
+| 9:45 am – 10:15 am | Value Proposition |
+| 10:15 am – 10:45 am |Overview of OMOP CDM |
+| 10:45 am – 11:30 am |Overview of Vocabulary and Athena |
+| 11:30 am – 11:45 am |**Break**|
+| 11:45 am – 12:45 pm |Hands-on Exercise|
+| 12:45 pm – 1:00 pm | Review and Next Steps |
 
 ---
 
