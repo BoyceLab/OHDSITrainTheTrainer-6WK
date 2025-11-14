@@ -11,8 +11,7 @@
 ### Data Quality Resources
 
 - [**Kahn et al. Framework:** PubMed link](https://pubmed.ncbi.nlm.nih.gov/27713905/)
-- [**OHDSI Data Quality Dashboard Results:**]  
-  (https://data.ohdsi.org/DataQualityDashboard/)
+- [**OHDSI Data Quality Dashboard Results:**](https://data.ohdsi.org/DataQualityDashboard/)
 
 ---
 
@@ -241,7 +240,7 @@ ORDER BY exposure_count DESC;
 793293
 ```
 
-## B.1.8 — Sulfonylureas (Ingredients)
+## B.1.8 — Sulfonylureas
 
 ```
 1594973  
