@@ -21,7 +21,7 @@ By the end of Day 2, participants will be able to:
 
 ## 🖥️ Slides & Materials
 
-- **📂 Day 2 Slides:** [DAY_2.pdf](DAY_2.pdf)  
+- **📂 Day 2 Slides:** [DAY_2.pdf](../assets/day2/DAY_2.pdf)  
 - **📝 Exercises:** [Day 2 · Vocabulary & Data Quality Exercise](../exercises/day-02-vocab-dqd.md)  
 - **🎮 Kahoot Quiz (Placeholder):** *Coming soon — spreadsheet in development*
 
