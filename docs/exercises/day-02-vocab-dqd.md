@@ -6,11 +6,12 @@
 
 - [**Study repository**](https://github.com/ohdsi-studies/SemaglutideNaion)
 - [**Study protocol**](https://ohdsi-studies.github.io/SemaglutideNaion/protocol.html)
-- **Manuscript** [JAMA Ophthalmology article](https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2830475)
+- [**Manuscript: JAMA Ophthalmology article**](https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2830475)
 
 ### Data Quality Resources
 
 - [**Kahn et al. Framework** PubMed link](https://pubmed.ncbi.nlm.nih.gov/27713905/)
+- [**OHDSI Data Quality Dashboard Documentation**](https://ohdsi.github.io/DataQualityDashboard/)
 - [**OHDSI Data Quality Dashboard Results**](https://data.ohdsi.org/DataQualityDashboard/)
 
 ---
