@@ -1,24 +1,29 @@
-# Exercises --- Day 2: ATLAS
+# Exercises — Day 2: ATLAS
 
 ## Study Examples & Supporting Material
 
 ### Semaglutide NAION Study
 
-- **Study repo:** [https://github.com/ohdsi-studies/SemaglutideNaion](https://github.com/ohdsi-studies/SemaglutideNaion)
-- **Protocol:** [https://ohdsi-studies.github.io/SemaglutideNaion/protocol.html](https://ohdsi-studies.github.io/SemaglutideNaion/protocol.html)
-- **Manuscript:** [https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2830475](https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2830475)
+- **Study Repository:**  
+  https://github.com/ohdsi-studies/SemaglutideNaion
+- **Protocol:**  
+  https://ohdsi-studies.github.io/SemaglutideNaion/protocol.html
+- **Manuscript:**  
+  https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2830475
 
 ### Data Quality Resources
 
-- **Kahn et al. Framework:** [https://pubmed.ncbi.nlm.nih.gov/27713905/](https://pubmed.ncbi.nlm.nih.gov/27713905/)
+- **Kahn et al. DQ Framework:**  
+  https://pubmed.ncbi.nlm.nih.gov/27713905/
 - **OHDSI Data Quality Dashboard:**  
-  [https://data.ohdsi.org/DataQualityDashboard/](https://data.ohdsi.org/DataQualityDashboard/)
+  https://data.ohdsi.org/DataQualityDashboard/
 
+---
 
 ## Words to Search
 
--   Chlorpropamide
--   Sulfonylureas
+- Chlorpropamide  
+- Sulfonylureas (class concept_id: **21600749**)
 
 ---
 
@@ -58,54 +63,55 @@ JOIN concept c
     ON c.concept_id = s.concept_id
 WHERE c.invalid_reason IS NULL
 ORDER BY c.concept_name;
-------------------------------------------------------------------------
+```
+
+---
 
 # OMOP Concept Exploration Notebook (Databricks)
 
-This notebook explores **concept_id = 1594973** in the OMOP CDM using
-Databricks SQL.
+This notebook explores **concept_id = 1594973** in the OMOP CDM using Databricks SQL.
 
-------------------------------------------------------------------------
+---
 
-## Cell 1 --- Intro
+## Cell 1 — Intro
 
-``` python
+```python
 %md
 # Explore OMOP Concept 1594973
 
 This notebook inspects the OMOP concept:
 
-- Basic concept details
-- Ancestors
-- Descendants
-- Direct relationships
+- Basic concept details  
+- Ancestors  
+- Descendants  
+- Direct relationships  
 - Drug exposures (exact + descendants)
 ```
 
-------------------------------------------------------------------------
+---
 
-## Cell 2 --- Set Parameter
+## Cell 2 — Set Parameter
 
-``` python
+```python
 concept_id = 1594973
 print(f"Using concept_id = {concept_id}")
 ```
 
-------------------------------------------------------------------------
+---
 
-## Cell 3 --- Concept Details
+## Cell 3 — Concept Details
 
-``` sql
+```sql
 SELECT *
 FROM concept
 WHERE concept_id = 1594973;
 ```
 
-------------------------------------------------------------------------
+---
 
-## Cell 4 --- Ancestors
+## Cell 4 — Ancestors
 
-``` sql
+```sql
 SELECT
   ca.ancestor_concept_id,
   a.concept_name AS ancestor_concept_name,
@@ -117,11 +123,11 @@ WHERE ca.descendant_concept_id = 1594973
 ORDER BY ca.min_levels_of_separation;
 ```
 
-------------------------------------------------------------------------
+---
 
-## Cell 5 --- Descendants
+## Cell 5 — Descendants
 
-``` sql
+```sql
 SELECT
   ca.descendant_concept_id,
   d.concept_name AS descendant_concept_name,
@@ -133,11 +139,11 @@ WHERE ca.ancestor_concept_id = 1594973
 ORDER BY ca.min_levels_of_separation, ca.descendant_concept_id;
 ```
 
-------------------------------------------------------------------------
+---
 
-## Cell 6 --- Direct Relationships
+## Cell 6 — Direct Relationships
 
-``` sql
+```sql
 SELECT
   cr.concept_id_1,
   c1.concept_name AS concept_1_name,
@@ -151,21 +157,21 @@ WHERE cr.concept_id_1 = 1594973
    OR cr.concept_id_2 = 1594973;
 ```
 
-------------------------------------------------------------------------
+---
 
-## Cell 7 --- Drug Exposures (Exact Only)
+## Cell 7 — Drug Exposures (Exact Only)
 
-``` sql
+```sql
 SELECT *
 FROM drug_exposure
 WHERE drug_concept_id = 1594973;
 ```
 
-------------------------------------------------------------------------
+---
 
-## Cell 8 --- Drug Exposures (Concept + Descendants)
+## Cell 8 — Drug Exposures (Concept + Descendants)
 
-``` sql
+```sql
 WITH concept_set AS (
   SELECT descendant_concept_id AS concept_id
   FROM concept_ancestor
@@ -180,11 +186,11 @@ JOIN concept_set cs
   ON de.drug_concept_id = cs.concept_id;
 ```
 
-------------------------------------------------------------------------
+---
 
-## Cell 9 --- Summary Counts
+## Cell 9 — Summary Counts
 
-``` sql
+```sql
 WITH concept_set AS (
   SELECT descendant_concept_id AS concept_id
   FROM concept_ancestor
@@ -207,120 +213,148 @@ GROUP BY de.drug_concept_id, c.concept_name
 ORDER BY exposure_count DESC;
 ```
 
-------------------------------------------------------------------------
+---
 
-# Concept ID Lists for In-class Exercises
+# Concept ID Lists for In-Class Exercises
 
-## B.1.5 Concept: DPP4 inhibitors
+## B.1.5 — DPP4 Inhibitors
 
-    43013884
-    40239216
-    40166035
-    1580747
-    19122137
+```
+43013884  
+40239216  
+40166035  
+1580747  
+19122137
+```
 
-## B.1.6 Concept: semaglutide
+## B.1.6 — Semaglutide
 
-    793143
+```
+793143
+```
 
-## B.1.7 Concept: SGLT2 inhibitors
+## B.1.7 — SGLT2 Inhibitors
 
-    43526465
-    44785829
-    45774751
-    793293
+```
+43526465  
+44785829  
+45774751  
+793293
+```
 
-## B.1.8 Concept: Sulfonylureas
+## B.1.8 — Sulfonylureas (Ingredients)
 
-    1594973
-    1597756
-    1560171
-    19097821
-    1559684
-    1502809
-    1502855
+```
+1594973  
+1597756  
+1560171  
+19097821  
+1559684  
+1502809  
+1502855
+```
 
-## B.1.9 Concept: Other anti-diabetics
+## B.1.8a — Sulfonylureas (Class Concept)
 
-    1529331
-    1530014
-    730548
-    19033498
-    19001409
-    19059796
-    19001441
-    1510202
-    1502826
-    1525215
-    1516766
-    1547504
-    1515249
+```
+21600749
+```
 
-## B.1.10 Concept: Insulin
+## B.1.9 — Other Anti-Diabetics
 
-    1596977
-    1550023
-    1567198
-    1502905
-    1513876
-    1531601
-    1586346
-    1544838
-    1516976
-    1590165
-    1513849
-    1562586
-    1588986
-    1513843
-    1586369
-    35605670
-    35602717
-    21600713
-    19078608
+```
+1529331  
+1530014  
+730548  
+19033498  
+19001409  
+19059796  
+19001441  
+1510202  
+1502826  
+1525215  
+1516766  
+1547504  
+1515249
+```
 
-## B.1.11 Concept: Metformin
+## B.1.10 — Insulin
 
-    1503297
+```
+1596977  
+1550023  
+1567198  
+1502905  
+1513876  
+1531601  
+1586346  
+1544838  
+1516976  
+1590165  
+1513849  
+1562586  
+1588986  
+1513843  
+1586369  
+35605670  
+35602717  
+21600713  
+19078608
+```
 
-## B.1.12 Concept: Secondary diabetes mellitus
+## B.1.11 — Metformin
 
-    195771
-    761051
+```
+1503297
+```
 
-## B.1.13 Concept: Type 1 diabetes mellitus
+## B.1.12 — Secondary Diabetes Mellitus
 
-    40484649
-    42689695
-    765533
-    43531006
-    765650
-    45770986
-    201254
-    45768456
-    40484648
-    4128019
-    435216
+```
+195771  
+761051
+```
 
-## B.1.14 Concept: Type 2 diabetes mellitus
+## B.1.13 — Type 1 Diabetes Mellitus
 
-    443238
-    201820
-    442793
-    40484648
-    201254
-    435216
-    195771
-    761051
-    4016045
-    40484649
-    43531009
-    4024659
+```
+40484649  
+42689695  
+765533  
+43531006  
+765650  
+45770986  
+201254  
+45768456  
+40484648  
+4128019  
+435216
+```
 
-## B.1.15 Concept: GLP-1 receptor agonists excluding semaglutide
+## B.1.14 — Type 2 Diabetes Mellitus
 
-    45774435
-    1583722
-    40170911
-    44506754
-    793143
-    44816332
+```
+443238  
+201820  
+442793  
+40484648  
+201254  
+435216  
+195771  
+761051  
+4016045  
+40484649  
+43531009  
+4024659
+```
+
+## B.1.15 — GLP-1 Receptor Agonists (Excluding Semaglutide)
+
+```
+45774435  
+1583722  
+40170911  
+44506754  
+793143  
+44816332
+```
