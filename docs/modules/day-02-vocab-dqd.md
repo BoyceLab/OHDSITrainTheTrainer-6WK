@@ -3,8 +3,8 @@
 ## 📘 Required Reading (Before Class)
 
 ### From *The Book of OHDSI*:
-- **Chapter 10 — Cohort Definitions**
-- **Chapter 5.1 & 5.2 Exercises** from “Standardized Vocabularies” (homework review in class)
+- [**Chapter 10 — Defining Cohorts**](https://ohdsi.github.io/TheBookOfOhdsi/Cohorts.html)
+- [**Chapter 5.1 & 5.2 Exercises**](https://ohdsi.github.io/TheBookOfOhdsi/StandardizedVocabularies.html#exercises-1)
 
 ---
 
