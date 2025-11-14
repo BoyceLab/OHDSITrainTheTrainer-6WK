@@ -4,22 +4,22 @@
 
 ### Semaglutide NAION Study
 
-- **Study repo:** [Study repository](https://github.com/ohdsi-studies/SemaglutideNaion)
-- **Protocol:** [Study protocol](https://ohdsi-studies.github.io/SemaglutideNaion/protocol.html)
+- [**Study repository**](https://github.com/ohdsi-studies/SemaglutideNaion)
+- [**Study protocol**](https://ohdsi-studies.github.io/SemaglutideNaion/protocol.html)
 - **Manuscript:** [JAMA Ophthalmology article](https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2830475)
 
 ### Data Quality Resources
 
-- **Kahn et al. Framework:** [PubMed link](https://pubmed.ncbi.nlm.nih.gov/27713905/)
-- **OHDSI Data Quality Dashboard:**  
-  [Dashboard site](https://data.ohdsi.org/DataQualityDashboard/)
+- [**Kahn et al. Framework:** PubMed link](https://pubmed.ncbi.nlm.nih.gov/27713905/)
+- [**OHDSI Data Quality Dashboard Results:**]  
+  (https://data.ohdsi.org/DataQualityDashboard/)
 
 ---
 
 ## Words to Search
 
-- Chlorpropamide  
-- Sulfonylureas (class concept_id: **21600749**)
+- Chlorpropamide (concept_id: **1594973**)  
+- Sulfonylureas (concept_id: **21600749**)
 
 ---
 
@@ -63,51 +63,44 @@ ORDER BY c.concept_name;
 
 ---
 
-# OMOP Concept Exploration Notebook (Databricks)
+# Explore Chlorpropamide (concept_id **1594973**)
 
-This notebook explores **concept_id = 1594973** in the OMOP CDM using Databricks SQL.
+This document explores the OMOP concept **1594973 --- Chlorpropamide**,
+covering:
 
----
+-   Basic concept details\
+-   Hierarchy (ancestors and descendants)\
+-   Direct concept relationships\
+-   Drug exposure records (exact and hierarchical)\
+-   Summary exposure counts
 
-## Cell 1 — Intro
+------------------------------------------------------------------------
 
-```python
-%md
-# Explore OMOP Concept 1594973
+## Set Parameter
 
-This notebook inspects the OMOP concept:
-
-- Basic concept details  
-- Ancestors  
-- Descendants  
-- Direct relationships  
-- Drug exposures (exact + descendants)
-```
-
----
-
-## Cell 2 — Set Parameter
-
-```python
+``` python
 concept_id = 1594973
 print(f"Using concept_id = {concept_id}")
 ```
 
----
+------------------------------------------------------------------------
 
-## Cell 3 — Concept Details
+## Concept Details
 
-```sql
+``` sql
 SELECT *
 FROM concept
 WHERE concept_id = 1594973;
 ```
 
----
+------------------------------------------------------------------------
 
-## Cell 4 — Ancestors
+## Ancestors
 
-```sql
+Retrieve ancestor concepts for Chlorpropamide, ordered by proximity in
+the hierarchy.
+
+``` sql
 SELECT
   ca.ancestor_concept_id,
   a.concept_name AS ancestor_concept_name,
@@ -119,11 +112,13 @@ WHERE ca.descendant_concept_id = 1594973
 ORDER BY ca.min_levels_of_separation;
 ```
 
----
+------------------------------------------------------------------------
 
-## Cell 5 — Descendants
+## Descendants
 
-```sql
+Retrieve all descendant concepts of Chlorpropamide.
+
+``` sql
 SELECT
   ca.descendant_concept_id,
   d.concept_name AS descendant_concept_name,
@@ -135,11 +130,14 @@ WHERE ca.ancestor_concept_id = 1594973
 ORDER BY ca.min_levels_of_separation, ca.descendant_concept_id;
 ```
 
----
+------------------------------------------------------------------------
 
-## Cell 6 — Direct Relationships
+## Direct Relationships
 
-```sql
+List all direct concept-to-concept relationships involving
+Chlorpropamide.
+
+``` sql
 SELECT
   cr.concept_id_1,
   c1.concept_name AS concept_1_name,
@@ -153,21 +151,21 @@ WHERE cr.concept_id_1 = 1594973
    OR cr.concept_id_2 = 1594973;
 ```
 
----
+------------------------------------------------------------------------
 
-## Cell 7 — Drug Exposures (Exact Only)
+## Drug Exposures --- Exact Match Only
 
-```sql
+``` sql
 SELECT *
 FROM drug_exposure
 WHERE drug_concept_id = 1594973;
 ```
 
----
+------------------------------------------------------------------------
 
-## Cell 8 — Drug Exposures (Concept + Descendants)
+## Drug Exposures --- Concept + Descendants
 
-```sql
+``` sql
 WITH concept_set AS (
   SELECT descendant_concept_id AS concept_id
   FROM concept_ancestor
@@ -182,11 +180,14 @@ JOIN concept_set cs
   ON de.drug_concept_id = cs.concept_id;
 ```
 
----
+------------------------------------------------------------------------
 
-## Cell 9 — Summary Counts
+## Summary Exposure Counts
 
-```sql
+Summaries of the number of drug exposures and unique persons exposed to
+each concept in the hierarchy.
+
+``` sql
 WITH concept_set AS (
   SELECT descendant_concept_id AS concept_id
   FROM concept_ancestor
@@ -208,6 +209,8 @@ JOIN concept c
 GROUP BY de.drug_concept_id, c.concept_name
 ORDER BY exposure_count DESC;
 ```
+
+------------------------------------------------------------------------
 
 ---
 
