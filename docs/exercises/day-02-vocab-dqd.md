@@ -253,12 +253,6 @@ ORDER BY exposure_count DESC;
 1502855
 ```
 
-## B.1.8a — Sulfonylureas (Class Concept)
-
-```
-21600749
-```
-
 ## B.1.9 — Other Anti-Diabetics
 
 ```
