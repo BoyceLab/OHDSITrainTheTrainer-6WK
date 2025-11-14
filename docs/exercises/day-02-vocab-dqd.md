@@ -20,6 +20,46 @@
 -   Chlorpropamide
 -   Sulfonylureas
 
+---
+
+# Sulfonylurea Class — OMOP Concept Set SQL
+
+```sql
+USE CATALOG cdm_catalog;
+USE cdm_schema;
+
+WITH sulfonylurea_ancestors AS (
+    SELECT 21600749 AS concept_id   -- Sulfonylureas (drug class)
+),
+
+sulfonylurea_descendants AS (
+    SELECT DISTINCT
+        ca.descendant_concept_id AS concept_id
+    FROM concept_ancestor ca
+    JOIN sulfonylurea_ancestors sa
+        ON ca.ancestor_concept_id = sa.concept_id
+),
+
+sulfonylurea_concept_set AS (
+    SELECT concept_id FROM sulfonylurea_ancestors
+    UNION
+    SELECT concept_id FROM sulfonylurea_descendants
+)
+
+SELECT
+    c.concept_id,
+    c.concept_name,
+    c.concept_code,
+    c.vocabulary_id,
+    c.domain_id,
+    c.concept_class_id
+FROM sulfonylurea_concept_set s
+JOIN concept c
+    ON c.concept_id = s.concept_id
+WHERE c.invalid_reason IS NULL
+ORDER BY c.concept_name;
+------------------------------------------------------------------------
+
 # OMOP Concept Exploration Notebook (Databricks)
 
 This notebook explores **concept_id = 1594973** in the OMOP CDM using
