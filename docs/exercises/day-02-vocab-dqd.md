@@ -6,12 +6,12 @@
 
 - [**Study repository**](https://github.com/ohdsi-studies/SemaglutideNaion)
 - [**Study protocol**](https://ohdsi-studies.github.io/SemaglutideNaion/protocol.html)
-- **Manuscript:** [JAMA Ophthalmology article](https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2830475)
+- **Manuscript** [JAMA Ophthalmology article](https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2830475)
 
 ### Data Quality Resources
 
-- [**Kahn et al. Framework:** PubMed link](https://pubmed.ncbi.nlm.nih.gov/27713905/)
-- [**OHDSI Data Quality Dashboard Results:**](https://data.ohdsi.org/DataQualityDashboard/)
+- [**Kahn et al. Framework** PubMed link](https://pubmed.ncbi.nlm.nih.gov/27713905/)
+- [**OHDSI Data Quality Dashboard Results**](https://data.ohdsi.org/DataQualityDashboard/)
 
 ---
 
@@ -72,15 +72,6 @@ covering:
 -   Direct concept relationships\
 -   Drug exposure records (exact and hierarchical)\
 -   Summary exposure counts
-
-------------------------------------------------------------------------
-
-## Set Parameter
-
-``` python
-concept_id = 1594973
-print(f"Using concept_id = {concept_id}")
-```
 
 ------------------------------------------------------------------------
 
