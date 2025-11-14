@@ -44,7 +44,7 @@ You’ll learn how data are organized, standardized, and queried using the OMOP 
 ---
 
 ## 🧠 Slides & Materials
-- 📑 **Lecture slides:** [Download Day 1 Slides (PDF)](../training/day1-omop-cdm/DAY_1.pdf)
+- 📑 **Lecture slides:** [Download Day 1 Slides](../training/docs/training/day1-omop-cdm/DAY_1.pdf)
 - 🧩 **SQL Examples:** [Day 1 · Code Snippets](../exercises/code_snippets/day-01-snippets.md)
 - 📘 **Cheat Sheet:** [OMOP Vocabulary and SQL Cheat Sheet](../common_artifacts/omop-vocab-sql-cheat-sheet.md)
 
