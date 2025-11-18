@@ -195,7 +195,7 @@ Pick another condition (e.g., *Hypertension*, *Asthma*, *Heart Failure*).
 ---
 
 >🧩 Use the [Cheat Sheet](../common_artifacts/omop-vocab-sql-cheat-sheet.md)and  
-> [Day 1 Slides](../training/day1-omop-cdm/Day1.pptx) to review these concepts.  
+> [Download Day 1 Slides](../training/docs/training/day1-omop-cdm/DAY_1.pdf) to review these concepts.  
 > For deeper exploration, repeat the [Athena Vocabulary Exercise](day-01-athena-cdm.md) with a different condition.
 
 ---
