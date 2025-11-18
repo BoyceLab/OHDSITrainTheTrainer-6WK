@@ -1,4 +1,4 @@
-# Cohort Design Cheat Sheet
+# Cohort Definition Design Cheat Sheet
 
 > Quick-reference guide for building high-quality, reproducible OHDSI cohorts in ATLAS.
 
