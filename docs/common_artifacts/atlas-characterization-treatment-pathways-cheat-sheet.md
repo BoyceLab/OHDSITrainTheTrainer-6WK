@@ -10,7 +10,7 @@
 - **Concept Sets** define **WHAT** (lists of codes)
 - **Cohorts** define **WHO and WHEN** (time-anchored events)
 
-**Key rule:** Treatment pathways use **cohort definitions**as the main input, not concept sets.
+**Key rule:** Treatment pathways use **cohort definitions** as the main input, not concept sets.
 
 ### Target Cohort vs Event Cohorts
 | Component | Purpose |
