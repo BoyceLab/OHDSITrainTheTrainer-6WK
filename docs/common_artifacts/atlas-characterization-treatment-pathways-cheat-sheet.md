@@ -1,6 +1,6 @@
 # ATLAS Characterization & Treatment Pathways — Trainer Cheat Sheet
 
-> A practical, high-yield reference for instructors and learners using **OHDSI ATLAS**, focused on **cohort design**, **characterization**, and **treatment pathway analysis**.
+> A practical reference for instructors and learners using **OHDSI ATLAS**, focused on **cohort design**, **characterization**, and **treatment pathway analysis**.
 
 ---
 
