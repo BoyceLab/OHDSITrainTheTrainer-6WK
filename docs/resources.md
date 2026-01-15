@@ -95,6 +95,10 @@
 - **[GitHub Learning Guide](https://docs.github.com/en/get-started/quickstart/hello-world)** – learn GitHub basics for version control and collaboration  
 
 ---
+### [ATLAS Characterization & Treatment Pathways Cheat Sheet](common_artifacts/atlas-characterization-treatment-pathways-cheat-sheet.md)
+> A practical reference for building target cohorts, event cohorts, and interpreting pathway visualizations and tables (especially Table 1d and persistence windows).  
+> Ideal for Weeks 4–6 (ATLAS Characterization + Treatment Pathways).
+
 
 ## 🧬 Oncology-Specific Resources
 
