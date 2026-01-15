@@ -98,6 +98,15 @@ A concept set alone can’t represent time.
 
 **Important:** Persistence ≠ adherence. Persistence ≠ true duration of therapy.
 
+### Analysis settings
+
+#### Target Cohort = who we’re analyzing
+- **Event Cohorts** = what can show up as steps
+- **Analysis Settings** = the rules that control noise vs detail:
+- **Collapse Days** controls how tightly events are grouped in time
+- **Minimum cell count** controls suppression of rare patterns
+- **Maximum path length** controls how many steps we keep
+- **Allow repeats** controls whether the same treatment can recur in one sequence”
 ---
 
 ## 5) Reading the Pathways Visualization (Sunburst)
