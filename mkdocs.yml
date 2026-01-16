@@ -28,6 +28,7 @@ nav:
       - Day 1 · OMOP Common Data Model and Standardized Vocabularies: modules/day-01-omop-cdm.md
       - Day 2 · Data Quality & Concept Sets: modules/day-02-vocab-dqd.md
       - Day 3 · Cohort Definitions: modules/day-03-cohorts.md
+      - Day 4 · Cohort Extraction: modules/day-04-extraction.md
       - Day 5 · Treatment Pathways: modules/day-05-treatment-pathways.md
       
   - Exercises:
