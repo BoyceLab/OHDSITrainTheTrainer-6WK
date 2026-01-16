@@ -4,7 +4,7 @@
 > A practical reference for building target cohorts, event cohorts, and interpreting pathway visualizations and tables.  
 > Ideal for Weeks 5–6 (ATLAS Characterization + Treatment Pathways).
 
-### [AtlasTreatment Pathways Exercises & Quiz](../common_artifacts/day-05-pathways.md)
+### [Atlas Treatment Pathways Exercises & Quiz](../exercises/day-05-pathways.md)
 > Companion materials for week 5.
 > 
 ## 🎯 Learning Objectives
