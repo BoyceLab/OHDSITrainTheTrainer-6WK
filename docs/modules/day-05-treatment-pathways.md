@@ -151,10 +151,12 @@ Persistence windows control how we **interpret exposure continuity**
 ATLAS shows observable sequence — it doesn’t imply clinical intent or guideline adherence.
 
 ---
-
 ### [ATLAS Characterization & Treatment Pathways Cheat Sheet](common_artifacts/atlas-characterization-treatment-pathways-cheat-sheet.md)
 > A practical reference for building target cohorts, event cohorts, and interpreting pathway visualizations and tables.  
 > Ideal for Weeks 5–6 (ATLAS Characterization + Treatment Pathways).
+
+### [Atlas Treatment Pathways Exercises & Quiz](exercises/day-05-pathways-optional.md)
+> Companion materials for week 5.
 
 ## 🎤 Tips for Teaching
 
