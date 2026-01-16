@@ -56,7 +56,7 @@ By the end of this lab, you should be able to:
 ### Task
 Confirm that the following cohort already exists and has been generated:
 
-- **[RB] Type 2 Diabetes Mellitus**
+- ** Type 2 Diabetes Mellitus**
 
 ### Check
 - Cohort has an index date
@@ -124,7 +124,7 @@ Create **at least three** of the following:
 1. Navigate to **Analyses → Pathways**
 2. Create a **New Pathway Analysis**
 3. Select **Target Cohort**:
-   - `[RB] Type 2 Diabetes Mellitus`
+   - ` Type 2 Diabetes Mellitus`
 4. Add **Event Cohorts**:
    - Metformin
    - DPP4
