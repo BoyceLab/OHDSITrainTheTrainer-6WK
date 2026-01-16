@@ -28,6 +28,8 @@ nav:
       - Day 1 · OMOP Common Data Model and Standardized Vocabularies: modules/day-01-omop-cdm.md
       - Day 2 · Data Quality & Concept Sets: modules/day-02-vocab-dqd.md
       - Day 3 · Cohort Definitions: modules/day-03-cohorts.md
+      - Day 5 · Treatment Pathways: modules/day-05-treatment-pathways.md
+      
   - Exercises:
       # - Day 0 · Environment Checks: exercises/day-00-environment.md
       - Day 1 · Athena & CDM: exercises/day-01-athena-cdm.md
@@ -38,6 +40,7 @@ nav:
       - Curated Resource List: resources.md
       - Vocabulary & SQL Cheat Sheet: common_artifacts/omop-vocab-sql-cheat-sheet.md
       - Cohort Design Cheat Sheet: common_artifacts/cohort-design-cheat-sheet.md
+      - Treatment Pathway Cheat Sheet:  atlas-characterization-treatment-pathway-cheat-sheet.md
       - Trainer Technical Considerations: common_artifacts/trainer-technical-considerations.md
       - Environment Checklist Template: common_artifacts/environment-checklist-template.md
       - OMOP SQL Examples: common_artifacts/omop-sql-examples.md
