@@ -39,7 +39,6 @@ nav:
       - Vocabulary & SQL Cheat Sheet: common_artifacts/omop-vocab-sql-cheat-sheet.md
       - Cohort Design Cheat Sheet: common_artifacts/cohort-design-cheat-sheet.md
       - Trainer Technical Considerations: common_artifacts/trainer-technical-considerations.md
-      - Trainer Kit Quick Card: common_artifacts/trainer-kit-quick-card.md
       - Environment Checklist Template: common_artifacts/environment-checklist-template.md
       - OMOP SQL Examples: common_artifacts/omop-sql-examples.md
       - SQL Validation Mini Lab: common_artifacts/sql-validation-mini-lab.md
