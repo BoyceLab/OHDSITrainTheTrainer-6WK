@@ -1,10 +1,6 @@
----
-title: "Day 05 — Treatment Pathways"
----
-
 # 🧪 Day 05 — Treatment Pathways
 
-> 🚧 **This page is actively being refined.**  
+> 🚧 **This page is under construction.**  
 > Content below is stable for teaching and exercises, but formatting and additional resources may continue to evolve.
 
 ---
@@ -12,17 +8,17 @@ title: "Day 05 — Treatment Pathways"
 ## 📚 Table of Contents
 - [Overview](#overview)
 - [Learning Objectives](#learning-objectives)
-- [Student Workbook & Hands-On Lab](#student-workbook--hands-on-lab)
-  - [Part 1 — Confirm the Target Cohort](#part-1--confirm-the-target-cohort)
-  - [Part 2 — Build Event Cohorts](#part-2--build-event-cohorts-drugs-as-cohorts)
-  - [Part 3 — Configure the Pathway Analysis](#part-3--configure-the-treatment-pathway-analysis)
-  - [Part 4 — Interpret the Visualization](#part-4--interpret-the-sunburst-visualization)
+- [Student Workbook & Hands-On Lab](#student-workbook-hands-on-lab)
+  - [Part 1 — Confirm the Target Cohort](#part-1-confirm-the-target-cohort)
+  - [Part 2 — Build Event Cohorts](#part-2-build-event-cohorts)
+  - [Part 3 — Configure the Treatment Pathway Analysis](#part-3-configure-the-treatment-pathway-analysis)
+  - [Part 4 — Interpret the Sunburst Visualization](#part-4-interpret-the-sunburst-visualization)
 - [Knowledge Check](#knowledge-check)
 - [Instructor Notes](#instructor-notes)
 
 ---
 
-## Overview
+## <a id="overview"></a>Overview
 
 In Day 05, participants learn how to use **OHDSI ATLAS Treatment Pathways** to describe **observable sequences of care** following cohort entry.
 
@@ -32,7 +28,7 @@ This module builds directly on:
 
 ---
 
-## Learning Objectives
+## <a id="learning-objectives"></a>Learning Objectives
 
 By the end of this session, participants will be able to:
 
@@ -44,7 +40,7 @@ By the end of this session, participants will be able to:
 
 ---
 
-## 📝 Student Workbook & Hands-On Lab
+## <a id="student-workbook-hands-on-lab"></a>📝 Student Workbook & Hands-On Lab
 
 ### 🧠 Key Reminders (Read Before You Start)
 
@@ -56,21 +52,21 @@ By the end of this session, participants will be able to:
 
 ---
 
-### Part 1 — Confirm the Target Cohort
+### <a id="part-1-confirm-the-target-cohort"></a>Part 1 — Confirm the Target Cohort
 
 Confirm that the following cohort exists and has been generated:
 
-- ** Type 2 Diabetes Mellitus**
+- **Type 2 Diabetes Mellitus**
 
 ✔ Cohort has an index date  
 ✔ Cohort successfully generated on your database  
 
-✍️ **Record**  
+✍️ **Record**
 - Total cohort count: ______________________
 
 ---
 
-### Part 2 — Build Event Cohorts (Drugs as Cohorts)
+### <a id="part-2-build-event-cohorts"></a>Part 2 — Build Event Cohorts (Drugs as Cohorts)
 
 Create cohorts representing **treatment events**.
 
@@ -101,12 +97,12 @@ Build **at least three** of the following:
 
 ---
 
-### Part 3 — Configure the Treatment Pathway Analysis
+### <a id="part-3-configure-the-treatment-pathway-analysis"></a>Part 3 — Configure the Treatment Pathway Analysis
 
 1. Navigate to **Analyses → Pathways**
 2. Create a **New Pathway Analysis**
 3. Target cohort:
-   - ` Type 2 Diabetes Mellitus`
+   - `Type 2 Diabetes Mellitus`
 4. Add event cohorts:
    - Metformin
    - DPP4
@@ -116,13 +112,13 @@ Build **at least three** of the following:
    - `30 days`
 6. Save and generate
 
-✍️ Record:
+✍️ **Record**
 - Persons with pathways: ______________________  
 - % of cohort with pathways: ______________________
 
 ---
 
-### Part 4 — Interpret the Sunburst Visualization
+### <a id="part-4-interpret-the-sunburst-visualization"></a>Part 4 — Interpret the Sunburst Visualization
 
 Answer while viewing the **Visualization** tab:
 
@@ -138,10 +134,9 @@ Answer while viewing the **Visualization** tab:
 
 ✍️ Notes:
 
-
 ---
 
-## ❓ Knowledge Check
+## <a id="knowledge-check"></a>❓ Knowledge Check
 
 Select the **single best answer**.
 
@@ -216,7 +211,7 @@ D. Table 1d
 
 ---
 
-## 🧑‍🏫 Instructor Notes
+## <a id="instructor-notes"></a>🧑‍🏫 Instructor Notes
 
 - Emphasize **Table 1d** for rapid understanding of complexity
 - Reinforce that pathways are **descriptive, not causal**
