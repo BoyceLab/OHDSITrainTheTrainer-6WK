@@ -1,47 +1,52 @@
-# Exercises · Day 5 (Optional) — Treatment Pathways
-# 🚧 Page Under Construction
-
-This section of the *OHDSI Train-the-Trainer* site is currently being developed.  
-Please check back soon for new materials, exercises, and resources.
-
-> 💡 In the meantime, explore the [Resources](../resources.md) or [Modules](../modules/day-01-omop-cdm.md) sections for available content.
-
 ---
 title: "Day 05 — Treatment Pathways"
 ---
 
-# 📝 Day 05 — Treatment Pathways  
-## Student Workbook & Hands-On Lab (ATLAS)
+# 🧪 Day 05 — Treatment Pathways
+
+> 🚧 **This page is actively being refined.**  
+> Content below is stable for teaching and exercises, but formatting and additional resources may continue to evolve.
 
 ---
 
-## 📌 Lab Overview
-
-In this lab, you will build and analyze **treatment pathways** for a Type 2 Diabetes Mellitus cohort using **OHDSI ATLAS**.
-
-You will:
-- Create **event cohorts** from drug exposures
-- Configure and run a **treatment pathway analysis**
-- Interpret both **visual** and **tabular** results
-- Explore how **persistence windows** change pathway complexity
+## 📚 Table of Contents
+- [Overview](#overview)
+- [Learning Objectives](#learning-objectives)
+- [Student Workbook & Hands-On Lab](#student-workbook--hands-on-lab)
+  - [Part 1 — Confirm the Target Cohort](#part-1--confirm-the-target-cohort)
+  - [Part 2 — Build Event Cohorts](#part-2--build-event-cohorts-drugs-as-cohorts)
+  - [Part 3 — Configure the Pathway Analysis](#part-3--configure-the-treatment-pathway-analysis)
+  - [Part 4 — Interpret the Visualization](#part-4--interpret-the-sunburst-visualization)
+- [Knowledge Check](#knowledge-check)
+- [Instructor Notes](#instructor-notes)
 
 ---
 
-## 🎯 Learning Objectives
+## Overview
 
-By the end of this lab, you should be able to:
+In Day 05, participants learn how to use **OHDSI ATLAS Treatment Pathways** to describe **observable sequences of care** following cohort entry.
+
+This module builds directly on:
+- Cohort definition (Day 03)
+- Cohort characterization (Day 04)
+
+---
+
+## Learning Objectives
+
+By the end of this session, participants will be able to:
 
 - Explain the difference between **target cohorts** and **event cohorts**
-- Build drug-based cohorts for pathway analysis
-- Run a treatment pathway analysis in ATLAS
-- Correctly interpret:
-  - Sunburst visualization
-  - Tables 1a–1d
-- Explain how persistence assumptions affect results
+- Build drug-based cohorts for treatment pathway analysis
+- Configure and run a pathway analysis in ATLAS
+- Interpret both **sunburst visualizations** and **tabular outputs**
+- Explain how **persistence windows** affect pathway results
 
 ---
 
-## 🧠 Key Reminders (Read Before You Start)
+## 📝 Student Workbook & Hands-On Lab
+
+### 🧠 Key Reminders (Read Before You Start)
 
 - **Concept sets define WHAT**
 - **Cohorts define WHEN**
@@ -51,109 +56,168 @@ By the end of this lab, you should be able to:
 
 ---
 
-## 🧩 Part 1 — Confirm the Target Cohort
+### Part 1 — Confirm the Target Cohort
 
-### Task
-Confirm that the following cohort already exists and has been generated:
+Confirm that the following cohort exists and has been generated:
 
 - ** Type 2 Diabetes Mellitus**
 
-### Check
-- Cohort has an index date
-- Cohort was successfully generated on your database
+✔ Cohort has an index date  
+✔ Cohort successfully generated on your database  
 
-✍️ **Write down**:
+✍️ **Record**  
 - Total cohort count: ______________________
 
 ---
 
-## 🧱 Part 2 — Build Event Cohorts (Drugs as Cohorts)
+### Part 2 — Build Event Cohorts (Drugs as Cohorts)
 
-You will now create cohorts that represent **treatment events**.
+Create cohorts representing **treatment events**.
 
-### Event Cohorts to Build
-Create **at least three** of the following:
+Build **at least three** of the following:
 
 - Metformin  
 - DPP4 inhibitors  
 - Sulfonylureas  
 - Insulin  
 
----
-
-### Step-by-Step Example — Metformin Event Cohort
+#### Example — Metformin Event Cohort
 
 1. Go to **Cohorts → New Cohort**
-2. Name the cohort:  
-   `Metformin`
-
-3. **Concept Set**
+2. Name: `Metformin`
+3. Concept set:
    - RxNorm ingredient: *metformin*
    - Include descendants
-
-4. **Cohort Entry Event**
-   - Drug exposure of metformin
-   - Observation requirement: `0 days before / 0 days after`
+4. Entry event:
+   - Drug exposure
+   - Observation: `0 days before / 0 days after`
    - Limit to **earliest event per person**
-
-5. **Cohort Exit**
-   - Persist until **end of continuous drug exposure**
+5. Exit:
+   - End of continuous drug exposure
    - Persistence window: `30 days`
+6. Save and generate
 
-6. Save and generate the cohort
-
-✍️ **Record**:
-- Metformin cohort count: ______________________
+✍️ Metformin cohort count: ______________________
 
 ---
 
-### Repeat for Additional Drug Classes
-
-✍️ **Record cohort counts**:
-
-| Drug Class | Cohort Count |
-|-----------|--------------|
-| DPP4 | |
-| Sulfonylureas | |
-| Insulin | |
-
----
-
-## ⚙️ Part 3 — Configure the Treatment Pathway Analysis
+### Part 3 — Configure the Treatment Pathway Analysis
 
 1. Navigate to **Analyses → Pathways**
 2. Create a **New Pathway Analysis**
-3. Select **Target Cohort**:
+3. Target cohort:
    - ` Type 2 Diabetes Mellitus`
-4. Add **Event Cohorts**:
+4. Add event cohorts:
    - Metformin
    - DPP4
    - Sulfonylureas
    - Insulin
-5. Set **Persistence Window**:
+5. Persistence window:
    - `30 days`
-6. Save and **Generate**
+6. Save and generate
 
-✍️ **Record**:
+✍️ Record:
 - Persons with pathways: ______________________  
 - % of cohort with pathways: ______________________
 
 ---
 
-## 🌀 Part 4 — Interpret the Sunburst Visualization
+### Part 4 — Interpret the Sunburst Visualization
 
-Answer the following while viewing the **Visualization** tab.
+Answer while viewing the **Visualization** tab:
 
-### Questions
+1. Most common first treatment after cohort entry:  
+   ___________________________________________
 
-1. What is the **most common first treatment** after cohort entry?  
-   ___________________________________________________________
+2. Insulin appears:
+   - ☐ Early
+   - ☐ Late
+   - ☐ Both
 
-2. Does insulin appear:
-   - ☐ Early in pathways  
-   - ☐ Late in pathways  
-   - ☐ Both  
-
-3. What do **Remain** and **Diff** represent when clicking a pathway segment?
+3. What do **Remain** and **Diff** represent?
 
 ✍️ Notes:
+
+
+---
+
+## ❓ Knowledge Check
+
+Select the **single best answer**.
+
+### Question 1  
+What is the primary purpose of treatment pathway analysis?
+
+A. Estimate causal effects  
+B. Describe observable treatment sequences  
+C. Calculate incidence  
+D. Validate cohorts  
+
+**Answer:** B
+
+---
+
+### Question 2  
+What defines the center of the sunburst?
+
+A. First drug exposure  
+B. Start of observation  
+C. Entry into the target cohort  
+D. First event cohort  
+
+**Answer:** C
+
+---
+
+### Question 3  
+Why are drugs defined as cohorts in pathways?
+
+A. Concept sets cannot include descendants  
+B. Cohorts provide timing and persistence  
+C. Drugs cannot be conditions  
+D. Cohorts imply intent  
+
+**Answer:** B
+
+---
+
+### Question 4  
+What does each outward ring represent?
+
+A. Time since diagnosis  
+B. Dose escalation  
+C. Entry into a new event cohort  
+D. Refills  
+
+**Answer:** C
+
+---
+
+### Question 5  
+Which table best summarizes pathway complexity?
+
+A. Table 1a  
+B. Table 1b  
+C. Table 1c  
+D. Table 1d  
+
+**Answer:** D
+
+---
+
+## 🧾 Scoring Guide
+
+| Score | Interpretation |
+|------:|----------------|
+| 9–10 | Excellent |
+| 7–8  | Solid |
+| 5–6  | Review |
+| <5   | Revisit materials |
+
+---
+
+## 🧑‍🏫 Instructor Notes
+
+- Emphasize **Table 1d** for rapid understanding of complexity
+- Reinforce that pathways are **descriptive, not causal**
+- Encourage learners to experiment with persistence windows
