@@ -155,7 +155,7 @@ ATLAS shows observable sequence — it doesn’t imply clinical intent or guidel
 > A practical reference for building target cohorts, event cohorts, and interpreting pathway visualizations and tables.  
 > Ideal for Weeks 5–6 (ATLAS Characterization + Treatment Pathways).
 
-### [Atlas Treatment Pathways Exercises & Quiz](exercises/day-05-pathways-optional.md)
+### [Atlas Treatment Pathways Exercises & Quiz](exercises/day-05-pathways.md)
 > Companion materials for week 5.
 
 ## 🎤 Tips for Teaching
