@@ -96,7 +96,7 @@
 
 ---
 ### [ATLAS Characterization & Treatment Pathways Cheat Sheet](common_artifacts/atlas-characterization-treatment-pathways-cheat-sheet.md)
-> A practical reference for building target cohorts, event cohorts, and interpreting pathway visualizations and tables (especially Table 1d and persistence windows).  
+> A practical reference for building target cohorts, event cohorts, and interpreting pathway visualizations and tables.  
 > Ideal for Weeks 5–6 (ATLAS Characterization + Treatment Pathways).
 
 
