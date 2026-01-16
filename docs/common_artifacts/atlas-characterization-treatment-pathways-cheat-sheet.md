@@ -31,6 +31,17 @@
 - Limit to **earliest event per person**
 - Require **prior observation** (often **365–730 days**)
 
+**What “require prior observation” means (important for teaching):**
+- The person must have **continuous observable data before the index event**
+- Implemented via the **OBSERVATION_PERIOD** table
+- Ensures the entry event is **likely incident**, not prevalent
+- Prevents misclassifying ongoing disease or treatment as “first-line”
+
+> Teaching one-liner:  
+> **“Prior observation answers: _Were we actually watching the patient long enough to know this is new?_”**
+
+---
+
 ### Confirmation (recommended)
 Use **ONE inclusion rule with OR logic**:
 - **Dx × 2** within ±365 days of index  
@@ -61,15 +72,15 @@ A concept set alone can’t represent time.
 
 **Example: Metformin event cohort**
 
-**Cohort Entry**
+#### Cohort Entry
 - Entry event: **drug exposure** of metformin ingredient
 - Limit initial events to: **earliest event per person**
 - Observation requirement: **0 days before / 0 days after** (keep simple)
 
-**Inclusion Criteria**
+#### Inclusion Criteria
 - None (intentional)
 
-**Cohort Exit**
+#### Cohort Exit
 - Persist until: **end of continuous drug exposure**
 - Persistence window: **30–60 days**
 - Use: **days supply + exposure end date** where available
@@ -98,15 +109,6 @@ A concept set alone can’t represent time.
 
 **Important:** Persistence ≠ adherence. Persistence ≠ true duration of therapy.
 
-### Analysis settings
-
-#### Target Cohort = who we’re analyzing
-- **Event Cohorts** = what can show up as steps
-- **Analysis Settings** = the rules that control noise vs detail:
-- **Collapse Days** controls how tightly events are grouped in time
-- **Minimum cell count** controls suppression of rare patterns
-- **Maximum path length** controls how many steps we keep
-- **Allow repeats** controls whether the same treatment can recur in one sequence”
 ---
 
 ## 5) Reading the Pathways Visualization (Sunburst)
@@ -147,22 +149,24 @@ A concept set alone can’t represent time.
 - Exactly 1 = one observable treatment episode/event
 - Exactly 2+ = multiple treatment changes/events
 
-**Key insight:** Table 1d is highly sensitive to **persistence window assumptions**.
+**Key insight:** Table 1d is highly sensitive to **persistence window assumptions** *and* **prior observation requirements**.
 
 ---
 
 ## 7) Common Misconceptions to Address
 
-- “One step = simple care” → Not necessarily; may reflect persistence assumptions or limited event cohorts
+- “One step = simple care” → Not necessarily; may reflect persistence or observation assumptions
 - “More steps = worse care” → Not necessarily; may reflect stricter episode rules or richer event sets
-- “Pathways show guideline adherence” → Pathways show observable transitions, not intent or quality
+- “Pathways show guideline adherence” → They show observable transitions, not intent or quality
 - “Percentages should sum to 100%” → Tables answer different questions; many counts overlap
+- “First drug = first-ever drug” → Only true **if prior observation is sufficient**
 
 ---
 
 ## 8) Instructor One-Liners
 
 - “Concept sets define **WHAT**; cohorts define **WHEN**.”
+- “Prior observation protects us from calling old disease ‘new.’”
 - “Pathways only move forward when something **new** happens.”
 - “Persistence assumptions can change pathways more than patient behavior.”
 - “Sunburst shows patterns; tables confirm them.”
@@ -172,14 +176,15 @@ A concept set alone can’t represent time.
 ## 9) Suggested Teaching Flow
 
 1. Build target cohort  
-2. Build one drug event cohort (Metformin)  
-3. Add 2–3 more event cohorts  
-4. Generate pathways  
-5. Explain sunburst  
-6. Move to tabular  
-7. Change persistence window → regenerate → compare Table 1d  
+2. Emphasize **prior observation requirement**  
+3. Build one drug event cohort (Metformin)  
+4. Add 2–3 more event cohorts  
+5. Generate pathways  
+6. Explain sunburst  
+7. Move to tabular  
+8. Change persistence window → regenerate → compare Table 1d  
 
 ---
 
 ## Final takeaway
-**Treatment pathways are not just about drugs — they’re about how we define and interpret time in the data.**
+**Treatment pathways are not just about drugs — they’re about how confidently we can interpret time, sequence, and “firstness” in observational data.**
