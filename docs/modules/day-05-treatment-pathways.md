@@ -126,16 +126,18 @@ Switch to **Tabular** to see:
 
 ## 🔁 Persistence Window Sensitivity
 
-**Persistence windows strongly shape pathways:**
-- *Short windows* produce more fragmented episodes
-- *Long windows* merge exposures into single episodes
+**Persistence windows strongly shape pathways:**  
+*Short windows* produce more fragmented episodes, while *long windows* merge exposures into single episodes.
 
-Example:
-| Persistence | More steps? | Fewer steps? |
-|-------------|-------------|--------------|
-| 0 days      | ✅ Yes       | ❌ No         |
-| 30 days     | Balanced     | Balanced     |
-| 90 days     | ❌ No        | ✅ Yes        |
+---
+
+### Example
+
+| Persistence Window | More Steps? | Fewer Steps? |
+|--------------------|------------|--------------|
+| 0 days             | ✅ Yes     | ❌ No       |
+| 30 days            | ⚖️ Balanced | ⚖️ Balanced |
+| 90 days            | ❌ No      | ✅ Yes      |
 
 ---
 
