@@ -1,77 +1,149 @@
 site_name: OMOP Train the Trainer with Dr. Danielle Boyce
+site_description: >-
+  A six-week, hands-on train-the-trainer curriculum for the OHDSI ecosystem —
+  from the OMOP Common Data Model through ATLAS cohort design to advanced
+  analytics with HADES.
 site_url: https://boycelab.github.io/OHDSITrainTheTrainer-6WK
 
 repo_url: https://github.com/BoyceLab/OHDSITrainTheTrainer-6WK
 repo_name: BoyceLab/OHDSITrainTheTrainer-6WK
+edit_uri: edit/main/docs/
 
 theme:
   name: material
-  logo: assets/img/IMG_7932.png
-  favicon: assets/img/IMG_7932.png
+  custom_dir: overrides
+  logo: assets/img/logo.png
+  favicon: assets/img/favicon.png
   font:
     text: EB Garamond
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
   palette:
-    scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   features:
+    - announce.dismiss
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
     - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - toc.follow
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
 
 nav:
   - Home: index.md
-  - Syllabus: syllabus.md
-  - Personas & Learning Paths: personas.md
-  - Modules:
+
+  - Start Here:
+      - How This Course Works: start-here.md
+      - Syllabus: syllabus.md
+      - Personas & Learning Paths: personas.md
       - Environment Walk-through: modules/00-environment-walkthrough.md
-      - Day 1 · OMOP Common Data Model and Standardized Vocabularies: modules/day-01-omop-cdm.md
-      - Day 2 · Data Quality & Concept Sets: modules/day-02-vocab-dqd.md
-      - Day 3 · Cohort Definitions: modules/day-03-cohorts.md
-      - Day 4 · Cohort Extraction: modules/day-04-extraction.md
-      - Day 5 · Treatment Pathways: modules/day-05-treatment-pathways.md
-      
-  - Exercises:
-      # - Day 0 · Environment Checks: exercises/day-00-environment.md
-      - Day 1 · Athena & CDM: exercises/day-01-athena-cdm.md
-      - Day 1 · Code Snippets: exercises/code_snippets/day-01-snippets.md
-      - Day 2 · Vocab & DQD: exercises/day-02-vocab-dqd.md
-      - Day 3 · Cohort Definitions: exercises/day-03-cohorts.md
-      - Day 5 · Treatment Pathways (exercises & quiz): exercises/day-05-pathways.md
-  - Resources:
+
+  - Weeks:
+      - "Week 1 · OMOP CDM & Vocabularies":
+          - Module: modules/day-01-omop-cdm.md
+          - Lab · Athena & CDM: exercises/day-01-athena-cdm.md
+          - Code Snippets: exercises/code_snippets/day-01-snippets.md
+      - "Week 2 · Data Quality & Concept Sets":
+          - Module: modules/day-02-vocab-dqd.md
+          - Lab · Vocab & DQD: exercises/day-02-vocab-dqd.md
+      - "Week 3 · Cohort Definitions":
+          - Module: modules/day-03-cohorts.md
+          - Lab · Cohort Definitions: exercises/day-03-cohorts.md
+      - "Week 4 · Cohort Extraction":
+          - Module: modules/day-04-extraction.md
+          - Lab · Extraction: exercises/day-04-extraction.md
+      - "Week 5 · Treatment Pathways":
+          - Module: modules/day-05-treatment-pathways.md
+          - Lab & Quiz: exercises/day-05-pathways.md
+      - "Week 6 · HADES & Advanced Analytics":
+          - Module · From ATLAS to HADES: modules/day-06-hades.md
+          - Package Catalogue: modules/day-06-hades-packages.md
+          - Walk-through · Patient-Level Prediction: modules/day-06-plp-walkthrough.md
+          - Reading Your Results: modules/day-06-analysis-viewer.md
+          - Lab & Quiz: exercises/day-06-hades-optional.md
+
+  - Toolkit:
       - Curated Resource List: resources.md
-      - Vocabulary & SQL Cheat Sheet: common_artifacts/omop-vocab-sql-cheat-sheet.md
-      - Cohort Design Cheat Sheet: common_artifacts/cohort-design-cheat-sheet.md
-      - Treatment Pathway Cheat Sheet:  atlas-characterization-treatment-pathway-cheat-sheet.md
-      - Trainer Technical Considerations: common_artifacts/trainer-technical-considerations.md
-      - Environment Checklist Template: common_artifacts/environment-checklist-template.md
-      - OMOP SQL Examples: common_artifacts/omop-sql-examples.md
-      - SQL Validation Mini Lab: common_artifacts/sql-validation-mini-lab.md
-      - ATLAS User Process Guide: common_artifacts/atlas-user-process-guide.md
-  - Community & Support:
+      - Glossary: glossary.md
+      - "Cheat Sheets":
+          - Vocabulary & SQL: common_artifacts/omop-vocab-sql-cheat-sheet.md
+          - Cohort Design: common_artifacts/cohort-design-cheat-sheet.md
+          - Characterization & Treatment Pathways: common_artifacts/atlas-characterization-treatment-pathways-cheat-sheet.md
+          - HADES Packages: common_artifacts/hades-package-cheat-sheet.md
+      - "Templates & Checklists":
+          - Environment Checklist: common_artifacts/environment-checklist-template.md
+          - HADES / R Environment Checklist: common_artifacts/hades-r-environment-checklist.md
+          - "ATLAS to HADES Hand-off Sheet": common_artifacts/atlas-to-hades-handoff.md
+          - Prediction Study Protocol Template: common_artifacts/plp-study-protocol-template.md
+      - "Reference":
+          - OMOP SQL Examples: common_artifacts/omop-sql-examples.md
+          - SQL Validation Mini Lab: common_artifacts/sql-validation-mini-lab.md
+          - ATLAS User Process Guide: common_artifacts/atlas-user-process-guide.md
+          - Trainer Technical Considerations: common_artifacts/trainer-technical-considerations.md
+
+  - Community:
       - Office Hours: community/office-hours.md
       - Weekly Community Meeting: community/weekly-meeting.md
       - Living FAQ: community/faq.md
-  - Acknowledgements: acknowledgements.md
+      - Acknowledgements: acknowledgements.md
 
 markdown_extensions:
-  - meta
+  - abbr
   - admonition
   - attr_list
   - def_list
   - footnotes
   - md_in_html
+  - meta
   - tables
   - toc:
-      permalink: false
+      permalink: "#"
+      permalink_title: Link to this section
+      toc_depth: 3
+  - pymdownx.betterem
+  - pymdownx.caret
   - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      base_path: ["."]
+      auto_append: ["includes/abbreviations.md"]
+      check_paths: true
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
+      clickable_checkbox: true
+  - pymdownx.tilde
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -81,7 +153,12 @@ plugins:
 
 extra:
   generator: false
-  
+  status:
+    new: Recently added
+    draft: Draft - under construction
 
 extra_css:
   - assets/css/custom.css
+
+extra_javascript:
+  - assets/js/course.js

@@ -104,7 +104,7 @@ Pick another condition (e.g., *Hypertension*, *Asthma*, *Heart Failure*).
 - OMOP standardizes to SNOMED so EHR diagnoses share a common meaning.  
 - ICD codes map to SNOMED via “Maps to” relationships in Athena.
 
-![Trainer example placeholder](../assets/day1/trainer-example.png)
+![Athena concept details for type 2 diabetes mellitus, showing the standard concept and its mappings](../assets/day1/concept-details.png)
 
 ---
 
@@ -195,7 +195,7 @@ Pick another condition (e.g., *Hypertension*, *Asthma*, *Heart Failure*).
 ---
 
 >🧩 Use the [Cheat Sheet](../common_artifacts/omop-vocab-sql-cheat-sheet.md)and  
-> [Download Day 1 Slides](../training/docs/training/day1-omop-cdm/DAY_1.pdf) to review these concepts.  
+> [Download Day 1 Slides](../assets/day1/DAY_1.pdf) to review these concepts.  
 > For deeper exploration, repeat the [Athena Vocabulary Exercise](day-01-athena-cdm.md) with a different condition.
 
 ---

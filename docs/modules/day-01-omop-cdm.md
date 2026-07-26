@@ -44,7 +44,7 @@ You’ll learn how data are organized, standardized, and queried using the OMOP 
 ---
 
 ## 🧠 Slides & Materials
-- 📑 **Lecture slides:** [Download Day 1 Slides](../training/docs/training/day1-omop-cdm/DAY_1.pdf)
+- 📑 **Lecture slides:** [Download Day 1 Slides](../assets/day1/DAY_1.pdf)
 - 🧩 **SQL Examples:** [Day 1 · Code Snippets](../exercises/code_snippets/day-01-snippets.md)
 - 📘 **Cheat Sheet:** [OMOP Vocabulary and SQL Cheat Sheet](../common_artifacts/omop-vocab-sql-cheat-sheet.md)
 
@@ -97,8 +97,8 @@ WHERE cr.concept_id_1 = <standard_concept_id>;
 !!! tip "Check your understanding"
     The Day 1 self-check quiz and practice tasks are included in  
     **[Day 1 · Exercises](../exercises/day-01-athena-cdm.md)**.  
-    Use the **[Cheat Sheet](../training/day1-omop-cdm/OMOP_Vocabulary_and_SQL_Cheat_Sheet.md)** and  
-    **[Day 1 Slides](../training/day1-omop-cdm/DAY_1.pdf)** for reference.
+    Use the **[Cheat Sheet](../common_artifacts/omop-vocab-sql-cheat-sheet.md)** and  
+    **[Day 1 Slides](../assets/day1/DAY_1.pdf)** for reference.
  
 > See the slides and cheat sheet for full practice queries.
 

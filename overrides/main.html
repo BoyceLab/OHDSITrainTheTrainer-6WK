@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+<!--
+  Site-wide "under construction" notices.
+
+  The announce bar (top of window) and the per-page banner (top of every
+  article) are both injected here rather than pasted into each Markdown file,
+  so any page added later is covered automatically.
+
+  To retire the notices when the site is finished, delete the two blocks below
+  or comment them out. Nothing in docs/ needs to change.
+-->
+
+{% block announce %}
+  <div class="ttt-announce">
+    <span class="ttt-announce__tag">Under construction</span>
+    <span class="ttt-announce__text">
+      This course site is being actively rebuilt. Pages may change between
+      sessions &mdash; check the date at the bottom of any page.
+    </span>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="uc" role="note" aria-label="This page is under construction">
+    <span class="uc__tag">Under construction</span>
+    <span class="uc__text">
+      This page is a living draft. Content is usable but not final &mdash;
+      corrections and additions are welcome via the repository.
+    </span>
+  </div>
+  {{ super() }}
+{% endblock %}

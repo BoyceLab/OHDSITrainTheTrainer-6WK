@@ -38,8 +38,9 @@ By the end of Day 3, participants will be able to:
 
 ## 🖥️ Slides & Materials
 
-- **📂 Day 3 Slides (Placeholder):** `DAY_3.pdf` *(upload to `docs/assets/day3/` then update this link)*  
-  👉 Suggested path: `../assets/day3/DAY_3.pdf`
+- **📂 Day 3 Slides:** *not yet uploaded.* The file at `docs/assets/day3/DAY_3.pdf`
+  is a 1-byte placeholder — replace it with the real deck and this link will work:
+  [DAY_3.pdf](../assets/day3/DAY_3.pdf)
 
 - **📝 Exercises:**  
   [Day 3 · Cohort Exercises](../exercises/day-03-cohorts.md)

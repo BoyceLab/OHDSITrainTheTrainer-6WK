@@ -23,8 +23,8 @@ Athena · Atlas Concept Sets and Cohort Definitions
 
 **Hands-on Materials:**  
 - [Vocabulary & SQL Cheat Sheet](common_artifacts/omop-vocab-sql-cheat-sheet.md)  
-- [Day 1 Code Snippets](../exercises/code_snippets/day-01-snippets.md)  
-- [Athena Vocabulary Exploration Exercise](../exercises/day-01-athena-cdm.md)
+- [Day 1 Code Snippets](exercises/code_snippets/day-01-snippets.md)  
+- [Athena Vocabulary Exploration Exercise](exercises/day-01-athena-cdm.md)
 
 **Side Exercise Ideas:**  
 - Identify standard vs non-standard concepts in Athena.  
@@ -47,9 +47,9 @@ Relate OHDSI tools to epidemiologic validity, confounding control, and study des
 ATLAS Characterization · Pathway Analysis · HADES (Characterization / Estimation / Prediction)
 
 **Hands-on Materials:**  
-- [Cohort Characterization Exercise](../exercises/day-03-cohorts.md)  
-- [Treatment Pathway Exercise](../exercises/day-05-pathways-optional.md)  
-- [HADES Overview](../exercises/day-06-hades-optional.md)
+- [Cohort Characterization Exercise](exercises/day-03-cohorts.md)  
+- [Treatment Pathway Exercise](exercises/day-05-pathways.md)  
+- [HADES Overview](exercises/day-06-hades-optional.md)
 
 **Side Exercise Ideas:**  
 - Critique a cohort definition for bias or misclassification.  
@@ -72,9 +72,9 @@ Emphasize reproducibility and programmatic access to OMOP data.
 SQL client · Atlas exports · SEARCH · DatabaseConnector · FeatureExtraction
 
 **Hands-on Materials:**  
-- [SQL Validation Mini Lab](../common_artifacts/sql-validation-mini-lab.md)  
-- [OMOP SQL Examples](../common_artifacts/omop-sql-examples.md)  
-- [Code Snippets](../exercises/code_snippets/day-01-snippets.md)
+- [SQL Validation Mini Lab](common_artifacts/sql-validation-mini-lab.md)  
+- [OMOP SQL Examples](common_artifacts/omop-sql-examples.md)  
+- [Code Snippets](exercises/code_snippets/day-01-snippets.md)
 
 **Side Exercise Ideas:**  
 - Recreate a concept-based query from the code snippet file.  
@@ -97,8 +97,8 @@ Use Atlas for rapid cohort discovery and interpretation; connect clinical reason
 Athena (concept interpretation) · Atlas Cohort Editor · Characterization reports
 
 **Hands-on Materials:**  
-- [Atlas Review Exercise](../exercises/atlas_review_exercise.md)  
-- [Cohort Characterization Exercise](../exercises/day-03-cohorts.md)
+- [Atlas Review Exercise](common_artifacts/atlas-user-process-guide.md)  
+- [Cohort Characterization Exercise](exercises/day-03-cohorts.md)
 
 **Side Exercise Ideas:**  
 - Define inclusion/exclusion criteria for a clinical condition cohort.  

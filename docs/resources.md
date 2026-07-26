@@ -129,5 +129,37 @@
 
 ---
 
+## HADES & R Analytics *(Week 6)*
+
+### Core documentation
+- **HADES package index** → [https://ohdsi.github.io/Hades/](https://ohdsi.github.io/Hades/)
+  The canonical list of packages, always current. Start here rather than from memory.
+- **PatientLevelPrediction** → [https://ohdsi.github.io/PatientLevelPrediction/](https://ohdsi.github.io/PatientLevelPrediction/)
+  Vignettes, benchmarks, and best-practice guidance for prediction studies.
+- **CohortMethod** → [https://ohdsi.github.io/CohortMethod/](https://ohdsi.github.io/CohortMethod/)
+- **CohortDiagnostics** → [https://ohdsi.github.io/CohortDiagnostics/](https://ohdsi.github.io/CohortDiagnostics/)
+- **Eunomia** (synthetic CDM for practice) → [https://ohdsi.github.io/Eunomia/](https://ohdsi.github.io/Eunomia/)
+- **DatabaseConnector** → [https://ohdsi.github.io/DatabaseConnector/](https://ohdsi.github.io/DatabaseConnector/)
+
+### Key reading
+- Reps JM, Schuemie MJ, Suchard MA, Ryan PB, Rijnbeek PR. *Design and implementation of a standardized framework to generate and evaluate patient-level prediction models using observational healthcare data.* J Am Med Inform Assoc. 2018;25(8):969&ndash;975.
+- **TRIPOD statement** → [https://www.tripod-statement.org/](https://www.tripod-statement.org/)
+  Reporting guidance for prediction model studies. Read before you write up.
+- *Book of OHDSI* &mdash; [Ch. 13: Patient-Level Prediction](https://ohdsi.github.io/TheBookOfOhdsi/PatientLevelPrediction.html)
+
+### Course materials
+- [Week 6 slide deck (PDF)](assets/day6/DAY_6_HADES.pdf)
+- [Module: From ATLAS to HADES](modules/day-06-hades.md)
+- [HADES package catalogue](modules/day-06-hades-packages.md)
+- [Patient-level prediction walk-through](modules/day-06-plp-walkthrough.md)
+- [Reading your results](modules/day-06-analysis-viewer.md)
+
+### Video
+- **OHDSI 2025 Tutorial: Patient-Level Prediction Applications to Generate Reliable Real-World Evidence** &mdash; faculty including Chungsoo Kim, Egill Fridgeirsson, Mitch Conover, Yong Chen, and Jenna Reps.
+  [Watch on YouTube](https://www.youtube.com/watch?v=fFNxO4ifsCE)
+- **Patient-Level Prediction in OHDSI** &mdash; [Watch on YouTube](https://youtu.be/qcPMf5Kq3Xw)
+
+---
+
 > Trainers: Customize this page with site-specific references, URLs, and internal data access resources as needed. Include institutional VPNs, intranet documentation, or Teams/Slack channels for communication.
 
